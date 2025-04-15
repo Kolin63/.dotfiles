@@ -9,6 +9,9 @@ endif
 
 call plug#begin()
 
+" Color Scheme
+Plug 'https://github.com/morhetz/gruvbox'
+
 " Surround words with parantheses, quotes, etc
 Plug 'https://github.com/tpope/vim-surround.git'
 
@@ -24,7 +27,11 @@ set nowrap
 set splitright
 set splitbelow
 
+" Colors
 syntax on
+set termguicolors
+colorscheme gruvbox
+let g:gruvbox_contrast_dark = 'hard'
 
 " Vimrc command to quickly edit this file
 command! Vimrc split ~/.vimrc
