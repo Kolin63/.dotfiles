@@ -27,7 +27,7 @@ set splitbelow
 syntax on
 
 " Vimrc command to quickly edit this file
-command Vimrc split ~/.vimrc
+command! Vimrc split ~/.vimrc
 
 " Space as leader
 map <Space> <Leader>
@@ -56,7 +56,10 @@ nnoremap <Leader>ff :Explore<CR>
 " Split Remaps
 nnoremap <Leader>s :split<CR>
 nnoremap <Leader>d :vsplit<CR>
+
+" Term Remaps
 nnoremap <Leader>t :term<CR>
+command! Vterm :vert term
 
 " Split Size Remaps
 " Equals is plus without shift
@@ -66,8 +69,8 @@ nnoremap <C-_> <C-w>-
 
 " Tab remaps
 nnoremap <C-t> :tabnew<CR>
-nnoremap <C-Tab> :tabn<CR>
-nnoremap <C-S-Tab> :tabp<CR>
+nnoremap <Tab> :tabn<CR>
+nnoremap <S-Tab> :tabp<CR>
 
 highlight markdownItalic cterm=italic ctermfg=darkgray ctermbg=black
 
