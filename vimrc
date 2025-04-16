@@ -18,8 +18,18 @@ Plug 'https://github.com/tpope/vim-surround'
 " CPP Completion
 Plug 'https://github.com/vim-scripts/OmniCppComplete'
 
+" CPP Syntax Highlighting
+Plug 'https://github.com/bfrg/vim-c-cpp-modern'
+
 " Error Checker / Linter
 Plug 'https://github.com/dense-analysis/ale'
+
+" A Plugin :A swaps between .h and .cpp
+Plug 'https://github.com/vim-scripts/a.vim'
+
+" Dependencies
+Plug 'https://github.com/marcweber/vim-addon-mw-utils'
+Plug 'https://github.com/tomtom/tlib_vim'
 
 call plug#end()
 
