@@ -8,8 +8,12 @@ call plug#begin()
 " Color Scheme
 Plug 'https://github.com/morhetz/gruvbox'
 
+" Airline
+Plug 'https://github.com/vim-airline/vim-airline'
+Plug 'https://github.com/vim-airline/vim-airline-themes'
+
 " Surround words with parantheses, quotes, etc
-Plug 'https://github.com/tpope/vim-surround.git'
+Plug 'https://github.com/tpope/vim-surround'
 
 call plug#end()
 
@@ -26,8 +30,18 @@ set splitbelow
 " Colors
 syntax on
 set termguicolors
-colorscheme gruvbox
 let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_italic=1
+colorscheme gruvbox
+set bg=dark
+
+" Airline
+let g:airline_theme='base16_gruvbox_dark_hard'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+
+" Guideline Column
+set colorcolumn=80
 
 " Vimrc command to quickly edit this file
 command! Vimrc split ~/.vimrc
