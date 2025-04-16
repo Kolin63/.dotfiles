@@ -15,6 +15,12 @@ Plug 'https://github.com/vim-airline/vim-airline-themes'
 " Surround words with parantheses, quotes, etc
 Plug 'https://github.com/tpope/vim-surround'
 
+" CPP Completion
+Plug 'https://github.com/vim-scripts/OmniCppComplete'
+
+" Error Checker / Linter
+Plug 'https://github.com/dense-analysis/ale'
+
 call plug#end()
 
 set rnu " relative line number
@@ -43,8 +49,28 @@ let g:airline_powerline_fonts = 1
 " Guideline Column
 set colorcolumn=80
 
+" Completion Tags
+set tags+=~/.vim/tags/cpp
+
+" OmniCPPComplete
+let OmniCpp_NamespaceSearch = 1
+let OmniCpp_GlobalScopeSearch = 1
+let OmniCpp_ShowAccess = 1
+let OmniCpp_ShowPrototypeInAbbr = 1 " show function parameters
+let OmniCpp_MayCompleteDot = 1 " autocomplete after .
+let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
+let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
+let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
+" automatically open and close the popup menu / preview window
+au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+set completeopt=menuone,menu,longest,preview
+
+" Ale (Linter)
+let g:ale_fixers = ['clangtidy']
+let g:ale_fix_on_save = 1
+
 " Vimrc command to quickly edit this file
-command! Vimrc split ~/.vimrc
+command! Vimrc tabnew ~/.vimrc
 
 " Space as leader
 map <Space> <Leader>
