@@ -1,5 +1,9 @@
 # Kolin63's Dotfiles
 
+Note: I no longer use the `vimrc` in this repo, and I instead use 
+[this NeoVim Config](https://github.com/kolin63/init.lua). However,
+I still use the `tmux.conf`.
+
 ## Symlink
 
 ### Linux
