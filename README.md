@@ -28,3 +28,6 @@ that binds Caps to Escape
 
 Press Win+R and go to shell:startup, then copy 
 the script into that directory
+
+To make windows alias, put the following in $profile
+`Set-Alias -Name vim -Value nvim`
