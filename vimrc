@@ -93,6 +93,11 @@ nnoremap "C "_C
 nnoremap "x "_x
 nnoremap "X "_X
 
+" Big letter stuff
+nnoremap D dd
+nnoremap Y yy
+nnoremap C cc
+
 " Scrolling Remap
 " This will scroll one line up/down and keep the cursor
 " in the same relative position
