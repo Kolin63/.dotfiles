@@ -3,3 +3,4 @@
 ln -s ~/.dotfiles/vimrc ~/.vimrc
 sudo ln -s ~/.dotfiles/vimrc /root/.vimrc
 ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
+ln -s ~/.dotfiles/bashrc ~/.bashrc
