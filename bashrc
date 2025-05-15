@@ -116,7 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias vim='nvim'
+alias v='nvim'
 
 alias ls='lsd'
 
@@ -130,6 +130,8 @@ export PATH=$PATH:/home/colin/.local/share/applications
 export MANPAGER='nvim +Man!'
 
 export XDG_CONFIG_HOME=/home/colin/.config
+
+export EDITOR='nvim'
 
 eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/gruvbox.omp.json')"
 
