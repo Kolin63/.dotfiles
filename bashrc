@@ -84,26 +84,9 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -117,8 +100,11 @@ if ! shopt -oq posix; then
 fi
 
 alias v='nvim'
+alias vim='nvim'
 
 alias ls='lsd'
+
+alias c='clear'
 
 alias ts='tmux-sessionizer'
 
@@ -126,6 +112,7 @@ export PATH=$PATH:/home/colin/.local/bin
 export PATH=$PATH:/home/colin/.local/scripts
 export PATH=$PATH:/usr/scripts
 export PATH=$PATH:/home/colin/.local/share/applications
+export PATH=$PATH:/home/colin/.local/kitty.app/bin
 
 export MANPAGER='nvim +Man!'
 
@@ -133,5 +120,7 @@ export XDG_CONFIG_HOME=/home/colin/.config
 
 export EDITOR='nvim'
 
-eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/gruvbox.omp.json')"
+export PRINTER='HL-2270DW'
+export LPDEST='HL-2270DW'
 
+eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/gruvbox.omp.json')"
