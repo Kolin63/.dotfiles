@@ -123,4 +123,9 @@ export EDITOR='nvim'
 export PRINTER='HL-2270DW'
 export LPDEST='HL-2270DW'
 
+# .lbashrc - for local operations
+if [ -e ~/.lbashrc ]; then
+  ~/.lbashrc 
+fi
+
 eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/gruvbox.omp.json')"
