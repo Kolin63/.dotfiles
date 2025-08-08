@@ -32,10 +32,10 @@ sym()
   printf "${NC}"
 }
 
-sym ~/.dotfiles/gh ~/.config/gh
 sym ~/.dotfiles/nvim ~/.config/nvim
 sym ~/.dotfiles/alacritty.toml ~/.config/alacritty/alacritty.toml
 sym ~/.dotfiles/bashrc ~/.bashrc
+sym ~/.dotfiles/gh.yml ~/.config/gh/config.yml
 sym ~/.dotfiles/git.conf ~/.gitconfig
 sym ~/.dotfiles/grub.conf /etc/default/grub sudo
 sym ~/.dotfiles/i3.conf ~/.config/i3/config
