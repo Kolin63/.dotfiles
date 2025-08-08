@@ -28,11 +28,12 @@ sym()
       printf "${RED}ERROR: ${CYAN}$1 ${RED}and ${CYAN}$2 ${RED}are not the same, resolve conflict!\n"
     fi
   fi
+
+  printf "${NC}"
 }
 
 sym ~/.dotfiles/gh ~/.config/gh
 sym ~/.dotfiles/nvim ~/.config/nvim
-sym ~/.dotfiles/advantage.txt /mnt/ADVANTAGE2/active/qwerty.txt sudo
 sym ~/.dotfiles/alacritty.toml ~/.config/alacritty/alacritty.toml
 sym ~/.dotfiles/bashrc ~/.bashrc
 sym ~/.dotfiles/git.conf ~/.gitconfig
