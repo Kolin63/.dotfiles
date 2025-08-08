@@ -106,12 +106,11 @@ alias ls='lsd'
 
 alias c='clear'
 
-alias ts='tmux-sessionizer'
+alias ts='~/.dotfiles/tmux-sessionizer.sh'
 
 alias windows='sudo grub-reboot 4; sudo reboot now'
 
 export PATH=$PATH:/home/colin/.local/bin
-export PATH=$PATH:/home/colin/.local/scripts
 export PATH=$PATH:/usr/scripts
 export PATH=$PATH:/home/colin/.local/share/applications
 export PATH=$PATH:/home/colin/.local/kitty.app/bin
