@@ -29,9 +29,6 @@ vim.keymap.set("n", "<leader>Y", "\"+Y")
 vim.keymap.set({ "n", "v" }, "<leader>d", "\"_d")
 vim.keymap.set({ "n", "v" }, "<leader>D", "\"_dd")
 
--- Get Rid of Q
-vim.keymap.set("n", "Q", "<nop>")
-
 -- Leader S over a word to replace it
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
