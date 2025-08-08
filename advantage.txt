@@ -1,0 +1,6 @@
+[delete]>[rwin]
+[home]>[kpshift]
+[kp-home]>[kpshift]
+[end]>[`]
+[pup]>[obrack]
+[pdown]>[cbrack]

@@ -15,7 +15,10 @@ sym()
 
   $3 diff $1 $2 &> /dev/null
   if ([ $? -eq 0 ] || [ ! -e $2 ]) && [ -e $1 ]; then
-    $3 rm $2 $dir &> /dev/null
+    printf "${RED}"
+    if [ -e $2 ]; then
+      $3 rm $2 $dir
+    fi
     $3 ln -s $1 $2
     printf "${NC}Updated symlink for ${CYAN}$1 ${NC}to ${CYAN}$2\n"
   else
@@ -29,6 +32,7 @@ sym()
 
 sym ~/.dotfiles/gh ~/.config/gh
 sym ~/.dotfiles/nvim ~/.config/nvim
+sym ~/.dotfiles/advantage.txt /mnt/ADVANTAGE2/active/qwerty.txt sudo
 sym ~/.dotfiles/alacritty.toml ~/.config/alacritty/alacritty.toml
 sym ~/.dotfiles/bashrc ~/.bashrc
 sym ~/.dotfiles/git.conf ~/.gitconfig
