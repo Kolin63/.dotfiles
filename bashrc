@@ -136,10 +136,15 @@ if [ -e ~/.lbashrc ]; then
   ~/.lbashrc 
 fi
 
-# .sbashrc - for startup operations
-if [ ! -e /tmp/.sbashrcWasRan ] && [ -e ~/.sbashrc ]; then
+# for startup operations
+if [ ! -e /tmp/.sbashrcWasRan ]; then
   touch /tmp/.sbashrcWasRan
-  ~/.sbashrc
+  if [ -e ~/.dotfiles/sbashrc ]; then
+    ~/.dotfiles/sbashrc # startup for all machines
+  fi
+  if [ -e ~/.lsbashrc ]; then
+    ~/.lsbashrc # for local startup
+  fi
 fi
 
 eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/gruvbox.omp.json')"
