@@ -54,14 +54,18 @@ nnoremap <Leader>pv :Explore<CR>
 nnoremap <C-t> :tabnew<CR>
 nnoremap <Tab> :tabn<CR>
 nnoremap <S-Tab> :tabp<CR>
-noremap <PageUp> :tabn<CR>
-noremap <PageDown> :tabp<CR>
 
 " Scrolling Remap
 nnoremap <M-k> 2<C-y>2k
 nnoremap <M-j> 2<C-e>2j
 nnoremap <C-k> 2<C-y>
 nnoremap <C-j> 2<C-e>
+
+" Page Up and Down
+nnoremap <PageUp> <C-u>
+nnoremap <PageDown> <C-d>
+nnoremap <S-PageUp> <PageUp>
+nnoremap <S-PageDown> <PageDown>
 
 " Leader Y Goes to System Clipboard
 " + Register is System Clipboard

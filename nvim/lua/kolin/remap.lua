@@ -10,14 +10,18 @@ end)
 
 vim.keymap.set("n", "<Tab>", vim.cmd.tabn)
 vim.keymap.set("n", "<S-Tab>", vim.cmd.tabp)
-vim.keymap.set({ 'n', 'i', 'v' }, "<PageUp>", vim.cmd.tabn)
-vim.keymap.set({ 'n', 'i', 'v' }, "<PageDown>", vim.cmd.tabp)
 
 -- Scrolling Remap
 vim.keymap.set("n", "<M-k>", "2<C-y>2k")
 vim.keymap.set("n", "<M-j>", "2<C-e>2j")
 vim.keymap.set("n", "<C-y>", "2<C-y>")
 vim.keymap.set("n", "<C-e>", "2<C-e>")
+
+-- Page Up and Down
+vim.keymap.set("n", "<PageUp>", "<C-u>")
+vim.keymap.set("n", "<PageDown>", "<C-d>")
+vim.keymap.set("n", "<S-PageUp>", "<PageUp>")
+vim.keymap.set("n", "<S-PageDown>", "<PageDown>")
 
 -- Leader Y Goes to System Clipboard
 -- + Register is System Clipboard
