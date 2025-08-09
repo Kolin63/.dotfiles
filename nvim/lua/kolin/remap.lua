@@ -93,3 +93,8 @@ vim.keymap.set({ 'i', 'n', 'v' }, "<S-Up>", "<nop>")
 vim.keymap.set({ 'i', 'n', 'v' }, "<S-Down>", "<nop>")
 vim.keymap.set({ 'i', 'n', 'v' }, "<S-Left>", "<nop>")
 vim.keymap.set({ 'i', 'n', 'v' }, "<S-Right>", "<nop>")
+
+-- :LuaToVim to convert basic remaps from Lua to Vimscript
+vim.api.nvim_create_user_command("LuaToVim", function(args)
+  vim.cmd([['<,'>s/.*"\([nvi]\)", *"\(.*\)", *"\(.*\)")/\1noremap \2 \3]])
+end, { nargs=0, range=true })
