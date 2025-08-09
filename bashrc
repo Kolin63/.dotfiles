@@ -124,7 +124,14 @@ export EDITOR='nvim'
 export PRINTER='HL-2270DW'
 export LPDEST='HL-2270DW'
 
+export TZ='America/New_York'
+
 # .lbashrc - for local operations
+# this script will automatically run startx after login
+#   if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+#     exec startx
+#   fi
+# also make sure to put `exec i3` in ~/.xsession
 if [ -e ~/.lbashrc ]; then
   ~/.lbashrc 
 fi
