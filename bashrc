@@ -129,4 +129,10 @@ if [ -e ~/.lbashrc ]; then
   ~/.lbashrc 
 fi
 
+# .sbashrc - for startup operations
+if [ ! -e /tmp/.sbashrcWasRan ] && [ -e ~/.sbashrc ]; then
+  touch /tmp/.sbashrcWasRan
+  ~/.sbashrc
+fi
+
 eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/gruvbox.omp.json')"
