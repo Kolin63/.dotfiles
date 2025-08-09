@@ -1,7 +1,3 @@
 #!/usr/bin/env bash
 # hides the mouse after 3 seconds of inactivity
 nohup unclutter -idle 3 &> /dev/null &
-
-# remaps
-xmodmap -e "keycode 119 = Super_R"
-xmodmap -e "keycode 115 = grave"
