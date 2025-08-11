@@ -26,7 +26,7 @@ set splitright
 set splitbelow
 
 " Colors
-set syntax
+syntax on
 set termguicolors
 set bg=dark
 
