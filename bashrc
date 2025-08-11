@@ -147,4 +147,4 @@ if [ ! -e /tmp/.sbashrcWasRan ]; then
   fi
 fi
 
-eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/gruvbox.omp.json')"
+eval "$(oh-my-posh init bash --config '~/.dotfiles/gruvbox.omp.json')"
