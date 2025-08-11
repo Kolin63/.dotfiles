@@ -62,5 +62,10 @@ vim.api.nvim_create_user_command("SpellList", function()
   local win = vim.api.nvim_get_current_win()
   local buf = vim.api.nvim_create_buf(true, true)
   vim.api.nvim_win_set_buf(win, buf)
-  vim.cmd("edit ~/.local/share/nvim/site/spell/en.utf-8.add")
+  vim.cmd("edit ~/.config/nvim/spell/en.utf-8.add")
 end, {})
+
+-- :LuaToVim to convert basic remaps from Lua to Vimscript
+vim.api.nvim_create_user_command("LuaToVim", function(args)
+  vim.cmd([['<,'>s/.*"\([nvi]\)", *"\(.*\)", *"\(.*\)")/\1noremap \2 \3]])
+end, { nargs=0, range=true })
