@@ -8,4 +8,6 @@ c.auto_save.session = True
 c.tabs.position = "left"
 c.tabs.width = 300
 
+c.input.insert_mode.auto_enter = True
+
 config.source("gruvbox.py")
