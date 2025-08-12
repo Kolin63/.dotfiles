@@ -121,8 +121,8 @@ export XDG_CONFIG_HOME=/home/colin/.config
 
 export EDITOR='nvim'
 
-export PRINTER='HL-2270DW'
-export LPDEST='HL-2270DW'
+export PRINTER='HL2270DW'
+export LPDEST='HL2270DW'
 
 export TZ='America/New_York'
 
