@@ -10,4 +10,9 @@ c.tabs.width = 300
 
 c.input.insert_mode.auto_enter = True
 
+c.url.searchengines = { 
+    "DEFAULT": "https://duckduckgo.com/?q={}",
+    "gh": "https://github.com/{}"
+}
+
 config.source("gruvbox.py")
