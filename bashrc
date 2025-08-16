@@ -110,6 +110,8 @@ alias ts='~/.dotfiles/tmux-sessionizer.sh'
 
 alias windows='sudo grub-reboot 4; sudo reboot now'
 
+alias mouse='~/.dotfiles/mousetoggle.sh'
+
 export PATH=$PATH:/home/colin/.local/bin
 export PATH=$PATH:/usr/scripts
 export PATH=$PATH:/home/colin/.local/share/applications
