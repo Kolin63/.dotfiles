@@ -14,7 +14,8 @@ c.input.insert_mode.auto_enter = True
 
 c.url.searchengines = { 
     "DEFAULT": "https://duckduckgo.com/?q={}",
-    "gh": "https://github.com/{}"
+    "gh": "https://github.com/{}",
+    "yt": "https://youtube.com/results?search_query={}",
 }
 
 config.source("gruvbox.py")
