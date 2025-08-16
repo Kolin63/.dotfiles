@@ -3,6 +3,8 @@ config.load_autoconfig(False)
 config.bind("<Ctrl-n>", "fake-key -g <Down>", mode="command")
 config.bind("<Ctrl-p>", "fake-key -g <Up>", mode="command")
 
+config.bind("tpo", "config-cycle tabs.position top left")
+
 c.auto_save.session = True
 
 c.tabs.position = "left"
