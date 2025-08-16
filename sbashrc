@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 # hides the mouse after 3 seconds of inactivity
 nohup unclutter -idle 3 &> /dev/null &
+
+git fetch ~/.dotfiles
