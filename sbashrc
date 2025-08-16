@@ -3,3 +3,8 @@
 nohup unclutter -idle 3 &> /dev/null &
 
 git fetch ~/.dotfiles
+
+for d in ~/Projects/*; do
+  cd $d
+  (git fetch &)
+done
