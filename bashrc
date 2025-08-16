@@ -133,17 +133,17 @@ export TZ='America/New_York'
 #   fi
 # also make sure to put `exec i3` in ~/.xsession
 if [ -e ~/.lbashrc ]; then
-  ~/.lbashrc 
+  source ~/.lbashrc 
 fi
 
 # for startup operations
 if [ ! -e /tmp/.sbashrcWasRan ]; then
   touch /tmp/.sbashrcWasRan
   if [ -e ~/.dotfiles/sbashrc ]; then
-    ~/.dotfiles/sbashrc # startup for all machines
+    source ~/.dotfiles/sbashrc # startup for all machines
   fi
   if [ -e ~/.lsbashrc ]; then
-    ~/.lsbashrc # for local startup
+    source ~/.lsbashrc # for local startup
   fi
 fi
 
