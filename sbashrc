@@ -7,4 +7,4 @@ nohup unclutter -idle 3 &> /dev/null &
 mouse off
 
 # fetch git repos
-nohup ~/.dotfiles/gitfetch.sh
+nohup ~/.dotfiles/gitfetch.sh &> /dev/null
