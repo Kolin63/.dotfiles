@@ -131,7 +131,7 @@ export TZ='America/New_York'
 #   if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
 #     exec startx
 #   fi
-# also make sure to put `exec i3` in ~/.xsession
+# also make sure to put `exec dwm` in ~/.xsession
 if [ -e ~/.lbashrc ]; then
   source ~/.lbashrc 
 fi
