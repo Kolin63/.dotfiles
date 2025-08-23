@@ -2,9 +2,5 @@
 # hides the mouse after 3 seconds of inactivity
 nohup unclutter -idle 3 &> /dev/null &
 
-git fetch /home/colin/.dotfiles
-
-for d in /home/colin/Projects/*; do
-  cd $d
-  (git fetch &)
-done
+# fetch git repos
+nohup ~/.dotfiles/startupgitfetch.sh
