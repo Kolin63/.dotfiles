@@ -3,4 +3,4 @@
 nohup unclutter -idle 3 &> /dev/null &
 
 # fetch git repos
-nohup ~/.dotfiles/startupgitfetch.sh
+nohup ~/.dotfiles/gitfetch.sh
