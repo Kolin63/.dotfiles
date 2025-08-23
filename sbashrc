@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
+
 # hides the mouse after 3 seconds of inactivity
 nohup unclutter -idle 3 &> /dev/null &
+
+# disable mouse by default
+mouse off
 
 # fetch git repos
 nohup ~/.dotfiles/gitfetch.sh
