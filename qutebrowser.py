@@ -5,7 +5,7 @@ config.bind("<Ctrl-p>", "fake-key -g <Up>", mode="command")
 
 config.bind("tpo", "config-cycle tabs.position top left")
 
-config.bind("yf", "fake-key -g ;Y")
+config.bind("yf", "fake-key -g ;y")
 
 c.aliases = {
 	"q": "close",
