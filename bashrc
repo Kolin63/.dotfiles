@@ -128,9 +128,13 @@ export TZ='America/New_York'
 
 # .lbashrc - for local operations
 # this script will automatically run startx after login
-#   if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
-#     exec startx
-#   fi
+# #!/usr/bin/env bash
+# 
+# if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+#   echo Starting Window Manager...
+#   sleep 1
+#   exec startx
+# fi
 # also make sure to put `exec dwm` in ~/.xsession
 if [ -e ~/.lbashrc ]; then
   source ~/.lbashrc 
