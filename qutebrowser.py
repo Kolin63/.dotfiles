@@ -5,6 +5,17 @@ config.bind("<Ctrl-p>", "fake-key -g <Up>", mode="command")
 
 config.bind("tpo", "config-cycle tabs.position top left")
 
+config.bind("yf", "fake-key -g ;Y")
+
+c.aliases = {
+	"q": "close",
+	"qa": "quit",
+	"w": "session-save",
+	"wq": "quit --save",
+	"wqa": "quit --save",
+    "o": "open"
+}
+
 c.auto_save.session = True
 
 c.tabs.position = "top"
