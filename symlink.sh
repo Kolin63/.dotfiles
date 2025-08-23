@@ -33,6 +33,7 @@ sym()
 }
 
 sym ~/.dotfiles/nvim ~/.config/nvim
+sym ~/.dotfiles/dwm/dwm /usr/bin/dwm sudo
 sym ~/.dotfiles/alacritty.toml ~/.config/alacritty/alacritty.toml
 sym ~/.dotfiles/bashrc ~/.bashrc
 sym ~/.dotfiles/gh.yml ~/.config/gh/config.yml
