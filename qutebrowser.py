@@ -7,7 +7,7 @@ config.bind("tpo", "config-cycle tabs.position top left")
 
 c.auto_save.session = True
 
-c.tabs.position = "left"
+c.tabs.position = "top"
 c.tabs.width = 300
 
 c.input.insert_mode.auto_enter = True
