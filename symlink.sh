@@ -39,8 +39,6 @@ sym ~/.dotfiles/bashrc ~/.bashrc
 sym ~/.dotfiles/gh.yml ~/.config/gh/config.yml
 sym ~/.dotfiles/git.conf ~/.gitconfig
 sym ~/.dotfiles/grub.conf /etc/default/grub sudo
-sym ~/.dotfiles/i3.conf ~/.config/i3/config
-sym ~/.dotfiles/i3status.conf ~/.config/i3status/config
 sym ~/.dotfiles/kitty.conf ~/.config/kitty/kitty.conf
 sym ~/.dotfiles/mousetoggle.sh /usr/bin/mouse sudo
 sym ~/.dotfiles/qutebrowser.py ~/.config/qutebrowser/config.py
