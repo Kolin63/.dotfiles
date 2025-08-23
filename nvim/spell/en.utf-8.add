@@ -27,3 +27,9 @@ config
 unintuitive
 usage
 scp
+unmount
+sdb1
+sdc
+pulseaudio
+pavucontrol
+unmute
