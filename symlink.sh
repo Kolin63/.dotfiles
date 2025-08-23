@@ -46,3 +46,4 @@ sym ~/.dotfiles/gruvbox_qutebrowser.py ~/.config/qutebrowser/gruvbox.py
 sym ~/.dotfiles/tmux.conf ~/.tmux.conf
 sym ~/.dotfiles/vimrc ~/.vimrc
 sym ~/.dotfiles/vimrc /root/.vimrc sudo
+sym ~/.dotfiles/xsession ~/.xsession

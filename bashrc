@@ -140,15 +140,4 @@ if [ -e ~/.lbashrc ]; then
   source ~/.lbashrc 
 fi
 
-# for startup operations
-if [ ! -e /tmp/.sbashrcWasRan ]; then
-  touch /tmp/.sbashrcWasRan
-  if [ -e ~/.dotfiles/sbashrc ]; then
-    source ~/.dotfiles/sbashrc # startup for all machines
-  fi
-  if [ -e ~/.lsbashrc ]; then
-    source ~/.lsbashrc # for local startup
-  fi
-fi
-
 eval "$(oh-my-posh init bash --config '~/.dotfiles/gruvbox.omp.json')"
