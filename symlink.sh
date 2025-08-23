@@ -44,7 +44,7 @@ sym ~/.dotfiles/i3status.conf ~/.config/i3status/config
 sym ~/.dotfiles/kitty.conf ~/.config/kitty/kitty.conf
 sym ~/.dotfiles/mousetoggle.sh /usr/bin/mouse sudo
 sym ~/.dotfiles/qutebrowser.py ~/.config/qutebrowser/config.py
-sym ~/.dotfiles/qutebrowser_gruvbox.py ~/.config/qutebrowser/gruvbox.py
+sym ~/.dotfiles/gruvbox_qutebrowser.py ~/.config/qutebrowser/gruvbox.py
 sym ~/.dotfiles/tmux.conf ~/.tmux.conf
 sym ~/.dotfiles/vimrc ~/.vimrc
 sym ~/.dotfiles/vimrc /root/.vimrc sudo
