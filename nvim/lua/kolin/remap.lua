@@ -96,3 +96,16 @@ vim.keymap.set({ 'i', 'n', 'v' }, "<S-Right>", "<nop>")
 
 -- Leader ch to do chubby
 vim.keymap.set("n", "<leader>ch", function() vim.cmd("!chubby") end)
+
+-- command to enable auto chubby
+vim.api.nvim_create_user_command("ChubbyAuto", "lua vim.g.chubby_auto=true", {})
+
+-- chubby on write
+vim.api.nvim_create_autocmd({ "BufWritePost", "FileWritePost" }, {
+  callback = function()
+    local chubby_auto = vim.g.chubby_auto
+    if chubby_auto == true then
+      vim.cmd("silent exec \"!chubby &> /dev/null &\"")
+    end
+  end
+})
