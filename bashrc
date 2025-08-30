@@ -140,4 +140,7 @@ if [ -e ~/.lbashrc ]; then
   source ~/.lbashrc 
 fi
 
+# python stuff
+source venv/bin/activate &> /dev/null
+
 eval "$(oh-my-posh init bash --config '~/.dotfiles/gruvbox.omp.json')"
