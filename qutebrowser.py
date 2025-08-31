@@ -15,9 +15,9 @@ c.aliases = {
 	"q": "close",
 	"qa": "quit",
 	"w": "session-save",
-	"wq": "quit --save",
-	"wqa": "quit --save",
-    "o": "open"
+  "wq": "quit --save",
+  "wqa": "quit --save",
+  "o": "open"
 }
 
 c.auto_save.session = True
@@ -28,9 +28,9 @@ c.tabs.width = 300
 c.input.insert_mode.auto_enter = True
 
 c.url.searchengines = { 
-    "DEFAULT": "https://duckduckgo.com/?q={}",
-    "gh": "https://github.com/{}",
-    "yt": "https://youtube.com/results?search_query={}",
+  "DEFAULT": "https://duckduckgo.com/?q={}",
+  "gh": "https://github.com/{}",
+  "yt": "https://youtube.com/results?search_query={}",
 }
 
 config.source("gruvbox.py")
