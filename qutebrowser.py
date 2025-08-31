@@ -7,6 +7,10 @@ config.bind("tpo", "config-cycle tabs.position top left")
 
 config.bind("yf", "fake-key -g ;y")
 
+config.bind("<Ctrl-=>", "zoom-in")
+config.bind("<Ctrl-->", "zoom-out")
+config.bind("<Ctrl-0>", "zoom 100")
+
 c.aliases = {
 	"q": "close",
 	"qa": "quit",
