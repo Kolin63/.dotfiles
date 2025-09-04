@@ -10,4 +10,4 @@ require("kolin.set")
 -- require("invisible-ink")
 
 vim.opt.rtp:append("~/Projects/burrito")
-require("burrito")  -- or whatever the plugin's entry point is
+require("burrito")
