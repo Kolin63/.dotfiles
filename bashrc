@@ -124,6 +124,8 @@ export EDITOR='nvim'
 export PRINTER='HL2270DW'
 export LPDEST='HL2270DW'
 
+export BC_ENV_ARGS='/home/colin/.dotfiles/bc'
+
 export TZ='America/New_York'
 
 # .lbashrc - for local operations
