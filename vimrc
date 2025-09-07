@@ -109,13 +109,6 @@ nnoremap <C-b> h
 " Ctrl Shift G Opens GitHub Repo in Web
 nnoremap <C-G> :!gh repo view --web<CR>
 
-" Auto Braces and Parentheses and stuff
-inoremap { {}<Esc>i
-inoremap [ []<Esc>i
-" inoremap ( ()<Esc>i
-" inoremap \" \"\"<Esc>i
-" inoremap ' ''<Esc>i
-
 " Ctrl Z undo
 inoremap <C-z> <Esc>ui
 nnoremap <C-z> <Esc>u
