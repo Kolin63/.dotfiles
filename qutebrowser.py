@@ -31,6 +31,8 @@ c.url.searchengines = {
   "DEFAULT": "https://duckduckgo.com/?q={}",
   "gh": "https://github.com/{}",
   "yt": "https://youtube.com/results?search_query={}",
+  "em": "https://emojipedia.org/{}",
+  "~":  "file:///home/colin/{}",
 }
 
 config.source("gruvbox.py")
