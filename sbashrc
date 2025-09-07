@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+# start window manager
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+  echo Starting Window Manager...
+  sleep 1
+  exec startx
+fi
+
 # hides the mouse after 3 seconds of inactivity
 nohup unclutter -idle 3 &> /dev/null &
 

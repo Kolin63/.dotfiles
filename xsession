@@ -11,4 +11,6 @@ if [ ! -e /tmp/.sbashrcWasRan ]; then
   fi
 fi
 
-exec dwm
+while [ -e /bin/dwm ]; do
+  ssh-agent dwm
+done

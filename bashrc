@@ -128,18 +128,16 @@ export BC_ENV_ARGS='/home/colin/.dotfiles/bc'
 
 export TZ='America/New_York'
 
-# .lbashrc - for local operations
-# this script will automatically run startx after login
-# #!/usr/bin/env bash
-# 
-# if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
-#   echo Starting Window Manager...
-#   sleep 1
-#   exec startx
-# fi
-# also make sure to put `exec dwm` in ~/.xsession
 if [ -e ~/.lbashrc ]; then
   source ~/.lbashrc 
+fi
+
+if [ ! -e /tmp/.sbashrcWasRan ]; then
+  if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+    echo Starting Window Manager...
+    sleep 1
+    exec startx
+  fi
 fi
 
 # python stuff
