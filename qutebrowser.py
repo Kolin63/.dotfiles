@@ -33,6 +33,7 @@ c.url.searchengines = {
   "yt": "https://youtube.com/results?search_query={}",
   "em": "https://emojipedia.org/{}",
   "~":  "file:///home/colin/{}",
+  "/":  "file:///{}",
 }
 
 config.source("gruvbox.py")
