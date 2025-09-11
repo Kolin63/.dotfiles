@@ -14,7 +14,17 @@ directory. The -m means make a new directory if it doesn't already exist.
 To unmount, use `sudo umount /mnt/directory`
 
 ## Wifi or Ethernet
-Use `nmtui`
+Use `nmtui`. One problem I had was when I setup Wifi using the Ubuntu 
+installation tool, and then Network Manager wouldn't discover any Wifi 
+networks. What you have to do is edit `/etc/netplan/someyamlfile` and add the 
+renderer line:
+```
+network:
+  version: 2
+  renderer: NetworkManager
+  ...
+```
+then `sudo netplan apply` then `sudo systemctl restart NetworkManager`.
 
 ## View Disk Usage
 Use `df -h`
