@@ -8,6 +8,7 @@ git fetch &> /dev/null
 
 cd /home/colin/.dotfiles/dwm
 git fetch &> /dev/null
+git fetch git://git.suckless.org/dwm master &> /dev/null
 
 for d in /home/colin/Projects/*; do
   cd $d
