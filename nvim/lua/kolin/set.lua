@@ -47,11 +47,11 @@ vim.cmd('autocmd BufEnter * setlocal formatoptions-=cro')
 
 -- CMP toggles
 local cmp = require("cmp")
-vim.api.nvim_create_user_command("CmpOn", function() 
+vim.api.nvim_create_user_command("CmpOn", function()
   cmp.setup.buffer { enabled = true }
   print("CMP enabled")
 end, {})
-vim.api.nvim_create_user_command("CmpOff", function() 
+vim.api.nvim_create_user_command("CmpOff", function()
   cmp.setup.buffer { enabled = false }
   print("CMP disabled")
 end, {})
