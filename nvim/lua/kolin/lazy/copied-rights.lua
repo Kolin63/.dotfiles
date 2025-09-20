@@ -18,7 +18,7 @@ return {
 
       headers = {
         {
-          file = "*.cc",
+          file = "*.cpp",
           lines = {
             "// SPDX-License-Identifier: MIT",
             "// Copyright (c) Colin Melican 2025",
@@ -51,14 +51,6 @@ return {
         },
         {
           file = "*.c",
-          lines = {
-            "// SPDX-License-Identifier: MIT",
-            "// Copyright (c) Colin Melican 2025",
-            "",
-          }
-        },
-        {
-          file = "*.cpp",
           lines = {
             "// SPDX-License-Identifier: MIT",
             "// Copyright (c) Colin Melican 2025",
