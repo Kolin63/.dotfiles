@@ -26,6 +26,14 @@ return {
           }
         },
         {
+          file = "*.h",
+          lines = {
+            "// SPDX-License-Identifier: MIT",
+            "// Copyright (c) Colin Melican 2025",
+            "",
+          }
+        },
+        {
           file = "*.lua",
           lines = {
             "-- SPDX-License-Identifier: MIT",
