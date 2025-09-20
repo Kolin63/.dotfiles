@@ -129,7 +129,7 @@ export BC_ENV_ARGS='/home/colin/.dotfiles/bc'
 export TZ='America/New_York'
 
 if [ -e ~/.lbashrc ]; then
-  source ~/.lbashrc 
+  source ~/.lbashrc
 fi
 
 if [ ! -e /tmp/.sbashrcWasRan ]; then
