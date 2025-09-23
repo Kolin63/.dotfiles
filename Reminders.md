@@ -2,21 +2,21 @@
 For obscure Linux things that I will forget.
 
 ## Audio
-Make sure pulseaudio and pavucontrol are installed. In pavucontrol, unmute the 
-output device. See [this StackOverflow 
+Make sure pulseaudio and pavucontrol are installed. In pavucontrol, unmute the
+output device. See [this StackOverflow
 answer](https://askubuntu.com/questions/14077/) for more information.
 
 ## Mounting Drives
-To find the name of the drive, use `lsblk`. The name will be something like sdb 
-or sdb1 or sdc. Run `sudo mount /dev/sdb /mnt/directory -m` to mount it to a 
+To find the name of the drive, use `lsblk`. The name will be something like sdb
+or sdb1 or sdc. Run `sudo mount /dev/sdb /mnt/directory -m` to mount it to a
 directory. The -m means make a new directory if it doesn't already exist.
 
 To unmount, use `sudo umount /mnt/directory`
 
 ## Wifi or Ethernet
-Use `nmtui`. One problem I had was when I setup Wifi using the Ubuntu 
-installation tool, and then Network Manager wouldn't discover any Wifi 
-networks. What you have to do is edit `/etc/netplan/someyamlfile` and add the 
+Use `nmtui`. One problem I had was when I setup Wifi using the Ubuntu
+installation tool, and then Network Manager wouldn't discover any Wifi
+networks. What you have to do is edit `/etc/netplan/someyamlfile` and add the
 renderer line:
 ```
 network:
@@ -24,7 +24,19 @@ network:
   renderer: NetworkManager
   ...
 ```
-then `sudo netplan apply` then `sudo systemctl restart NetworkManager`.
+then `sudo netplan generate` and `sudo netplan apply` then `sudo systemctl
+restart NetworkManager`.
+
+## Slow Boot Times
+If it's from the network manager, do this:
+```
+sudo systemctl disable --now systemd-networkd-wait-online.service
+sudo systemctl mask systemd-networkd-wait-online.service
+sudo systemctl disable --now systemd-networkd.service systemd-networkd.socket
+sudo netplan generate
+sudo netplan apply
+```
+Then reboot.
 
 ## View Disk Usage
 Use `df -h`
