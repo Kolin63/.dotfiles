@@ -11,8 +11,7 @@ git fetch &> /dev/null
 git fetch git://git.suckless.org/dwm master &> /dev/null
 
 for d in /home/colin/Projects/*; do
-  cd $d
-  git fetch &> /dev/null
+  cd $d && git fetch || git status && git pull
 done
 
 cd ~
