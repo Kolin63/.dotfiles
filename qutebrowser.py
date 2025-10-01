@@ -27,13 +27,16 @@ c.tabs.width = 300
 
 c.input.insert_mode.auto_enter = True
 
-c.url.searchengines = { 
+c.url.searchengines = {
   "DEFAULT": "https://duckduckgo.com/?q={}",
   "gh": "https://github.com/{}",
   "yt": "https://youtube.com/results?search_query={}",
   "em": "https://emojipedia.org/{}",
   "~":  "file:///home/colin/{}",
   "/":  "file:///{}",
+  "mw": "https://www.merriam-webster.com/dictionary/{}",
+  "vocab": "https://www.vocabulary.com/dictionary/{}",
+  "cpp": "https://duckduckgo.com/?sites=cppreference.com&q={}&ia=web"
 }
 
 config.source("gruvbox.py")
