@@ -3,7 +3,7 @@ return {
 
   config = function()
     require("whitetrail").setup({
-      whitespace = { " " }
+      whitespace = { " ", "\t" }
     })
   end
 }
