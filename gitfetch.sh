@@ -3,15 +3,10 @@
 # fetches git repos
 # meant to be run on startup with hcup
 
-cd /home/colin/.dotfiles
-git fetch &> /dev/null
+dirs=( /home/colin/.dotfiles /home/colin/.dotfiles/dwm /home/colin/Projects/* )
 
-cd /home/colin/.dotfiles/dwm
-git fetch &> /dev/null
-git fetch git://git.suckless.org/dwm master &> /dev/null
-
-for d in /home/colin/Projects/*; do
-  cd $d && git fetch || git status && git pull
+for d in ${dirs[@]}; do
+  cd $d && git pull
 done
 
 cd ~
