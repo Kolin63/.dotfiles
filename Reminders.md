@@ -40,3 +40,13 @@ Then reboot.
 
 ## View Disk Usage
 Use `df -h`
+
+## Enable GPU Acceleration
+[here](https://www.tech2geek.net/how-to-enable-gpu-acceleration-on-linux-nvidia-
+amd-support/), or just do this
+```
+sudo apt install nvidia-driver-550
+sudo apt install vainfo vdpauinfo
+glxinfo | grep render
+# should see OpenGL renderer string: NVIDIA GeForce...
+```
