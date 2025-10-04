@@ -11,6 +11,8 @@ if [ ! -e /tmp/.sbashrcWasRan ]; then
   fi
 fi
 
+feh --bg-scale ~/.dotfiles/dwm/wallpaper.jpg
+
 while [ -e /bin/dwm ]; do
   ssh-agent dwm
 done
