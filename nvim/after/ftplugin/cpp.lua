@@ -5,7 +5,7 @@ vim.api.nvim_create_user_command("Ref",
   "silent !open https://cppreference.com", {})
 
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
-  pattern = { "*.cpp", "*.h" },
+  pattern = { "*.cpp", "*.hpp" },
   callback = function(args)
     require("conform").format({ bufnr = args.buf })
   end

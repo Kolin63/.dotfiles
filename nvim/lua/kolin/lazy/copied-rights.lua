@@ -26,7 +26,7 @@ return {
           }
         },
         {
-          file = "*.h",
+          file = "*.hpp",
           lines = {
             "// SPDX-License-Identifier: MIT",
             "// Copyright (c) Colin Melican 2025",
@@ -51,6 +51,14 @@ return {
         },
         {
           file = "*.c",
+          lines = {
+            "// SPDX-License-Identifier: MIT",
+            "// Copyright (c) Colin Melican 2025",
+            "",
+          }
+        },
+        {
+          file = "*.h",
           lines = {
             "// SPDX-License-Identifier: MIT",
             "// Copyright (c) Colin Melican 2025",
