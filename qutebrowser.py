@@ -36,7 +36,7 @@ c.url.searchengines = {
   "/":  "file:///{}",
   "mw": "https://www.merriam-webster.com/dictionary/{}",
   "vocab": "https://www.vocabulary.com/dictionary/{}",
-  "cpp": "https://duckduckgo.com/?sites=cppreference.com&q={}&ia=web"
+  "cppr": "https://duckduckgo.com/?sites=cppreference.com&q={}&ia=web"
 }
 
 config.source("gruvbox.py")
