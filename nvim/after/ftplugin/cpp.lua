@@ -4,12 +4,12 @@ vim.api.nvim_create_user_command("Style",
 vim.api.nvim_create_user_command("Ref",
   "silent !open https://cppreference.com", {})
 
-vim.api.nvim_create_autocmd({ "BufWritePre" }, {
-  pattern = { "*.cpp", "*.hpp" },
-  callback = function(args)
+vim.api.nvim_create_user_command("W",
+  function(args)
     require("conform").format({ bufnr = args.buf })
-  end
-})
+    vim.cmd("w");
+  end, {}
+)
 
 vim.api.nvim_create_user_command("A", ":LspClangdSwitchSourceHeader", {})
 
