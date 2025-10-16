@@ -143,4 +143,4 @@ fi
 # python stuff
 source venv/bin/activate &> /dev/null
 
-[ -e /bin/oh-my-posh ] && eval "$(oh-my-posh init bash --config '~/.dotfiles/gruvbox.omp.json')"
+[ -e $HOME/.local/bin/oh-my-posh ] && eval "$(oh-my-posh init bash --config '~/.dotfiles/gruvbox.omp.json')"
