@@ -102,7 +102,7 @@ fi
 alias v='nvim'
 alias vim='nvim'
 
-alias ls='lsd'
+[ -e /bin/lsd ] && alias ls='lsd'
 
 alias c='clear'
 
@@ -143,4 +143,4 @@ fi
 # python stuff
 source venv/bin/activate &> /dev/null
 
-eval "$(oh-my-posh init bash --config '~/.dotfiles/gruvbox.omp.json')"
+[ -e /bin/oh-my-posh ] && eval "$(oh-my-posh init bash --config '~/.dotfiles/gruvbox.omp.json')"
