@@ -6,15 +6,14 @@ CYAN="\033[0;36m"
 NC="\033[0m"
 
 # arguments: source path, target symlink path, sudo
-sym()
-{
+function sym() {
   dir=""
   if [ -d $1 ] || [ -d $2 ]; then
     dir="-r"
   fi
 
   $3 diff $1 $2 &> /dev/null
-  if ([ $? -eq 0 ] || [ ! -e $2 ]) && [ -e $1 ]; then
+  if [ $? -eq 0 ] || [ ! -e $2 ] && [ -e $1 ]; then
     printf "${RED}"
     if [ -e $2 ]; then
       $3 rm $2 $dir

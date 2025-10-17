@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+host="kolin63.com"
+
+(wget --timeout=5 --tries=1 $host || notify-send -u critical "Uh Oh!" "Hostname $host is not responding") &> /dev/null &
