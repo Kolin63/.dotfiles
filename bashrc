@@ -106,7 +106,7 @@ alias vim='nvim'
 
 alias c='clear'
 
-alias ts='~/.dotfiles/tmux-sessionizer.sh'
+alias ts='tmux-sessionizer'
 
 alias windows='sudo grub-reboot 4; sudo reboot now'
 
