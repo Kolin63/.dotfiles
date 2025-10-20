@@ -31,7 +31,7 @@ c.url.searchengines = {
   "DEFAULT": "https://duckduckgo.com/?q={}",
   "gh": "https://github.com/{}",
   "yt": "https://youtube.com/results?search_query={}",
-  "em": "https://emojipedia.org/{}",
+  "em": "https://emojipedia.org/en/search?q={}",
   "~":  "file:///home/colin/{}",
   "/":  "file:///{}",
   "mw": "https://www.merriam-webster.com/dictionary/{}",
