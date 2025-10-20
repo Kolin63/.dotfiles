@@ -115,6 +115,7 @@ export PATH=$PATH:/usr/scripts
 export PATH=$PATH:/home/colin/.local/share/applications
 export PATH=$PATH:/home/colin/.local/kitty.app/bin
 export PATH=$PATH:/home/colin/.dotfiles/scripts
+export PATH=$PATH:/home/colin/.cargo/bin
 
 export MANPAGER='nvim +Man!'
 
