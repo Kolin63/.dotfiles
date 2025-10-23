@@ -14,7 +14,7 @@ nohup unclutter -idle 3 &> /dev/null &
 mouse off
 
 # fetch git repos
-nohup ~/.dotfiles/gitfetch.sh &> /dev/null
+nohup autogitfetch &> /dev/null
 
 # dwm status
 nohup ~/.dotfiles/dwm/daemonstatus.sh &> /dev/null &
