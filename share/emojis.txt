@@ -145,3 +145,6 @@
 💚 Green Heart
 💙 Blue Heart
 🧡 Orange Heart
+💬 Speech Balloon
+🪄 Magic Wand
+🏗️ Building Construction Crane
