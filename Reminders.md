@@ -57,3 +57,9 @@ glxinfo | grep render
 sudo apt install fonts-noto-color-emoji
 ```
 and restart the program.
+
+## Reverse Scroll
+Find the id of your mouse or trackpad with `xinput list`. Next, run `xinput
+list-props <id>` and look for something like Reverse Scroll or Natural Scroll,
+and note the number next to it (something like 308). Finally, run `xinput
+set-prop <mouse id> <reverse scroll id> <value>`. Value will probably be 1.
