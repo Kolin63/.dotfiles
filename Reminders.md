@@ -51,3 +51,9 @@ sudo apt install vainfo vdpauinfo
 glxinfo | grep render
 # should see OpenGL renderer string: NVIDIA GeForce...
 ```
+
+## Emojis
+```
+sudo apt install fonts-noto-color-emoji
+```
+and restart the program.
