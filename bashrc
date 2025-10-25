@@ -99,16 +99,16 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias v='nvim'
-alias vim='nvim'
+alias v="nvim"
+alias vim="nvim"
 
-[ -e /bin/lsd ] && alias ls='lsd'
+[ -e /bin/lsd ] && alias ls="lsd"
 
-alias c='clear'
+alias c="clear"
 
-alias ts='tmux-sessionizer'
+alias ts="tmux-sessionizer"
 
-alias windows='sudo grub-reboot 4; sudo reboot now'
+alias windows="sudo grub-reboot 4; sudo reboot now"
 
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/usr/scripts"
@@ -117,18 +117,18 @@ export PATH="$PATH:$HOME/.local/kitty.app/bin"
 export PATH="$PATH:$HOME/.dotfiles/scripts"
 export PATH="$PATH:$HOME/.cargo/bin"
 
-export MANPAGER='nvim +Man!'
+export MANPAGER="nvim +Man!"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
-export EDITOR='nvim'
+export EDITOR="nvim"
 
-export PRINTER='HL2270DW'
-export LPDEST='HL2270DW'
+export PRINTER="HL2270DW"
+export LPDEST="HL2270DW"
 
 export BC_ENV_ARGS="$HOME/.dotfiles/bc"
 
-export TZ='America/New_York'
+export TZ="America/New_York"
 
 if [ -e ~/.lbashrc ]; then
   source ~/.lbashrc
