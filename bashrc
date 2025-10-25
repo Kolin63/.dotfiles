@@ -110,23 +110,23 @@ alias ts='tmux-sessionizer'
 
 alias windows='sudo grub-reboot 4; sudo reboot now'
 
-export PATH=$PATH:/home/colin/.local/bin
-export PATH=$PATH:/usr/scripts
-export PATH=$PATH:/home/colin/.local/share/applications
-export PATH=$PATH:/home/colin/.local/kitty.app/bin
-export PATH=$PATH:/home/colin/.dotfiles/scripts
-export PATH=$PATH:/home/colin/.cargo/bin
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:/usr/scripts"
+export PATH="$PATH:$HOME/.local/share/applications"
+export PATH="$PATH:$HOME/.local/kitty.app/bin"
+export PATH="$PATH:$HOME/.dotfiles/scripts"
+export PATH="$PATH:$HOME/.cargo/bin"
 
 export MANPAGER='nvim +Man!'
 
-export XDG_CONFIG_HOME=/home/colin/.config
+export XDG_CONFIG_HOME="$HOME/.config"
 
 export EDITOR='nvim'
 
 export PRINTER='HL2270DW'
 export LPDEST='HL2270DW'
 
-export BC_ENV_ARGS='/home/colin/.dotfiles/bc'
+export BC_ENV_ARGS="$HOME/.dotfiles/bc"
 
 export TZ='America/New_York'
 

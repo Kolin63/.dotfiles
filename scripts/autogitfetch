@@ -3,12 +3,12 @@
 # fetches git repos
 # meant to be run on startup with hcup
 
-dirs=( /home/colin/.dotfiles /home/colin/.dotfiles/dwm /home/colin/Projects/* )
+dirs=( "$HOME/.dotfiles" "$HOME/.dotfiles/dwm" "$HOME/Projects/*" )
 
 for d in ${dirs[@]}; do
   cd $d && git pull
 done
 
-cd /home/colin/.dotfiles/dwm && make
+cd "$HOME/.dotfiles/dwm" && make
 
 cd ~
