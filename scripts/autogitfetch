@@ -9,4 +9,6 @@ for d in ${dirs[@]}; do
   cd $d && git pull
 done
 
+cd /home/colin/.dotfiles/dwm && make
+
 cd ~
