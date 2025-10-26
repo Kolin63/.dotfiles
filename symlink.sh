@@ -14,6 +14,11 @@ function sym() {
 
   $3 diff $1 $2 &> /dev/null
   if [ $? -eq 0 ] || [ ! -e $2 ] && [ -e $1 ]; then
+    printf "${NC}Make a symlink for $1? (y/N): "
+    read input;
+    if [ "$input" != "y" ] && [ "$input" != "Y" ]; then
+      return
+    fi
     printf "${RED}"
     if [ -e $2 ]; then
       $3 rm $2 $dir
