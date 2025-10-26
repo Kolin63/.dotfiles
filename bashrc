@@ -99,10 +99,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias v="nvim"
-alias vim="nvim"
-
 [ -e /bin/lsd ] && alias ls="lsd"
+
+export EDITOR="nvim"
+nvim --version &> /dev/null || export EDITOR="vi"
+
+alias v="$EDITOR"
 
 alias c="clear"
 
@@ -121,8 +123,6 @@ export MANPAGER="nvim +Man!"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
-export EDITOR="nvim"
-
 export PRINTER="HL2270DW"
 export LPDEST="HL2270DW"
 
@@ -135,7 +135,7 @@ if [ -e ~/.lbashrc ]; then
 fi
 
 if [ ! -e /tmp/.sbashrcWasRan ]; then
-  if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+  if [[ -e /bin/dwm ]] && [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
     echo Starting Window Manager...
     sleep 1
     exec startx
@@ -145,4 +145,4 @@ fi
 # python stuff
 source venv/bin/activate &> /dev/null
 
-eval "$(oh-my-posh init bash --config '~/.dotfiles/gruvbox.omp.json')" &> /dev/null
+eval "$(oh-my-posh init bash --config '~/.dotfiles/gruvbox.omp.json' &> /dev/null)" &> /dev/null

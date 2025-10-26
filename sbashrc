@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # start window manager
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+if [[ -e /bin/dwm ]] && [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
   echo Starting Window Manager...
   sleep 1
   exec startx
