@@ -12,11 +12,14 @@ unclutter -idle 3 &> /dev/null &
 
 # disable mouse by default
 mousetoggle off
+xdotools mousemove 0 0
 
 # fetch git repos
 autogitfetch &> /dev/null
 
 # dwm status
 $HOME/.dotfiles/dwm/daemonstatus.sh &> /dev/null &
+
+picom &> /dev/null &
 
 webtest
