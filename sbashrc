@@ -17,6 +17,6 @@ mousetoggle off
 nohup autogitfetch &> /dev/null
 
 # dwm status
-nohup ~/.dotfiles/dwm/daemonstatus.sh &> /dev/null &
+nohup $HOME/.dotfiles/dwm/daemonstatus.sh &> /dev/null &
 
 webtest
