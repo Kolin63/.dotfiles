@@ -8,15 +8,15 @@ if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
 fi
 
 # hides the mouse after 3 seconds of inactivity
-nohup unclutter -idle 3 &> /dev/null &
+unclutter -idle 3 &> /dev/null &
 
 # disable mouse by default
 mousetoggle off
 
 # fetch git repos
-nohup autogitfetch &> /dev/null
+autogitfetch &> /dev/null
 
 # dwm status
-nohup $HOME/.dotfiles/dwm/daemonstatus.sh &> /dev/null &
+$HOME/.dotfiles/dwm/daemonstatus.sh &> /dev/null &
 
 webtest
