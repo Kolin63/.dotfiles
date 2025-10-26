@@ -11,7 +11,7 @@ fi
 nohup unclutter -idle 3 &> /dev/null &
 
 # disable mouse by default
-mouse off
+mousetoggle off
 
 # fetch git repos
 nohup autogitfetch &> /dev/null
