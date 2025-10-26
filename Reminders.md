@@ -63,3 +63,10 @@ Find the id of your mouse or trackpad with `xinput list`. Next, run `xinput
 list-props <id>` and look for something like Reverse Scroll or Natural Scroll,
 and note the number next to it (something like 308). Finally, run `xinput
 set-prop <mouse id> <reverse scroll id> <value>`. Value will probably be 1.
+
+## Flashing an ISO
+Plug in the drive, then run `lsblk` to find the name. It will be something like
+`/dev/sdb`. Download the iso file. Then, run
+```bash
+sudo dd bs=4M if=/path/to/file.iso of=/dev/sdX status=progress oflag=sync
+```
