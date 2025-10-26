@@ -39,7 +39,6 @@ sym ~/.dotfiles/gh.yml ~/.config/gh/config.yml
 sym ~/.dotfiles/git.conf ~/.gitconfig
 sym ~/.dotfiles/grub.conf /etc/default/grub sudo
 sym ~/.dotfiles/kitty.conf ~/.config/kitty/kitty.conf
-sym ~/.dotfiles/mousetoggle.sh /usr/bin/mouse sudo
 sym ~/.dotfiles/qutebrowser.py ~/.config/qutebrowser/config.py
 sym ~/.dotfiles/gruvbox_qutebrowser.py ~/.config/qutebrowser/gruvbox.py
 sym ~/.dotfiles/tmux.conf ~/.tmux.conf
