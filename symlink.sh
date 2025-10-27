@@ -36,18 +36,18 @@ function sym() {
   printf "${NC}"
 }
 
-sym ~/.dotfiles/nvim ~/.config/nvim
-sym ~/.dotfiles/dwm/dwm /usr/bin/dwm sudo
-sym ~/.dotfiles/alacritty.toml ~/.config/alacritty/alacritty.toml
-sym ~/.dotfiles/bashrc ~/.bashrc
-sym ~/.dotfiles/gh.yml ~/.config/gh/config.yml
-sym ~/.dotfiles/git.conf ~/.gitconfig
-sym ~/.dotfiles/grub.conf /etc/default/grub sudo
-sym ~/.dotfiles/kitty.conf ~/.config/kitty/kitty.conf
-sym ~/.dotfiles/picom.conf ~/.config/picom/picom.conf
-sym ~/.dotfiles/qutebrowser.py ~/.config/qutebrowser/config.py
-sym ~/.dotfiles/gruvbox_qutebrowser.py ~/.config/qutebrowser/gruvbox.py
-sym ~/.dotfiles/tmux.conf ~/.tmux.conf
-sym ~/.dotfiles/vimrc ~/.vimrc
-sym ~/.dotfiles/vimrc /root/.vimrc sudo
-sym ~/.dotfiles/xsession ~/.xsession
+sym ~/.dotfiles/nvim                    ~/.config/nvim
+sym ~/.dotfiles/dwm/dwm                 /usr/bin/dwm sudo
+sym ~/.dotfiles/alacritty.toml          ~/.config/alacritty/alacritty.toml
+sym ~/.dotfiles/bashrc                  ~/.bashrc
+sym ~/.dotfiles/gh.yml                  ~/.config/gh/config.yml
+sym ~/.dotfiles/git.conf                ~/.gitconfig
+sym ~/.dotfiles/grub.conf               /etc/default/grub sudo
+sym ~/.dotfiles/kitty.conf              ~/.config/kitty/kitty.conf
+sym ~/.dotfiles/picom.conf              ~/.config/picom/picom.conf
+sym ~/.dotfiles/qutebrowser.py          ~/.config/qutebrowser/config.py
+sym ~/.dotfiles/gruvbox_qutebrowser.py  ~/.config/qutebrowser/gruvbox.py
+sym ~/.dotfiles/tmux.conf               ~/.tmux.conf
+sym ~/.dotfiles/vimrc                   ~/.vimrc
+sym ~/.dotfiles/vimrc                   /root/.vimrc sudo
+sym ~/.dotfiles/xsession                ~/.xsession
