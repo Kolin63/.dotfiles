@@ -12,7 +12,7 @@ unclutter -idle 3 &> /dev/null &
 
 # disable mouse by default
 mousetoggle off
-xdotools mousemove 0 0
+xdotool mousemove 0 0
 
 # fetch git repos
 autogitfetch &> /dev/null
