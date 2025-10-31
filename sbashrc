@@ -23,3 +23,5 @@ $HOME/.dotfiles/dwm/daemonstatus.sh &> /dev/null &
 picom &> /dev/null &
 
 webtest
+
+redshift -l 40.9993216:-74.1113856 &> /dev/null &
