@@ -39,4 +39,8 @@ c.url.searchengines = {
   "cppr": "https://duckduckgo.com/?sites=cppreference.com&q={}&ia=web"
 }
 
+c.content.tls.certificate_errors = "load-insecurely"
+c.content.javascript.clipboard = "access"
+c.content.notifications.enabled = False
+
 config.source("gruvbox.py")
