@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
-cat $HOME/.dotfiles/share/ansiicolor.txt | dmenu -i -l 30 | awk '{printf "%s", $1;}' | xclip -selection clipboard
+color=$(cat $HOME/.dotfiles/share/ansiicolor.txt | dmenu -i -l 30 | awk '{printf "%s", $1;}')
+if [ "$color" == "" ]; then exit 1; fi
+echo -n "$color" | xclip -selection clipboard
 notify-send "Success" "Copied color to clipboard"
