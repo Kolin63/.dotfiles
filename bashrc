@@ -130,6 +130,9 @@ export BC_ENV_ARGS="$HOME/.dotfiles/bc"
 
 export TZ="America/New_York"
 
+# java stuff
+export CLASSPATH=build/classes/java/main/
+
 if [ -e ~/.dotfiles/lbashrc ]; then
   source ~/.dotfiles/lbashrc
 fi
