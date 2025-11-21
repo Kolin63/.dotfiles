@@ -26,5 +26,7 @@ return {
         }
       }
     })
+
+    vim.lsp.config("jdtls", {})
   end
 }
