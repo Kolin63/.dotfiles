@@ -130,8 +130,8 @@ export BC_ENV_ARGS="$HOME/.dotfiles/bc"
 
 export TZ="America/New_York"
 
-if [ -e ~/.lbashrc ]; then
-  source ~/.lbashrc
+if [ -e ~/.dotfiles/lbashrc ]; then
+  source ~/.dotfiles/lbashrc
 fi
 
 if [ ! -e /tmp/.sbashrcWasRan ]; then
@@ -139,6 +139,13 @@ if [ ! -e /tmp/.sbashrcWasRan ]; then
     echo Starting Window Manager...
     sleep 1
     exec startx
+  fi
+  touch /tmp/.sbashrcWasRan
+  if [ -e ~/.dotfiles/lsbashrc ]; then
+    source ~/.dotfiles/lsbashrc # for local startup
+  fi
+  if [ -e ~/.dotfiles/sbashrc ]; then
+    source ~/.dotfiles/sbashrc # startup for all machines
   fi
 fi
 
