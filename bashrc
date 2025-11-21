@@ -99,7 +99,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
-[ -e /bin/lsd ] && alias ls="lsd"
+if [ -e /bin/lsd ]; then
+  alias ls="lsd"
+  alias tree="lsd --tree"
+fi
 
 export EDITOR="nvim"
 nvim --version &> /dev/null || export EDITOR="vi"
