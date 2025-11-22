@@ -51,3 +51,4 @@ sym ~/.dotfiles/tmux.conf               ~/.tmux.conf
 sym ~/.dotfiles/vimrc                   ~/.vimrc
 sym ~/.dotfiles/vimrc                   /root/.vimrc sudo
 sym ~/.dotfiles/xsession                ~/.xsession
+sym ~/.dotfiles/mimeapps.list           ~/.config/mimeapps.list
