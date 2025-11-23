@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
 function print_help() {
-  echo "usage: mouse on | off"
-  echo "or:    mouse"
+  echo "usage: mousetoggle on | off"
+  echo "or:    mousetoggle"
+  echo "or:    mousetoggle get"
   echo ""
   echo "Reads device name from /tmp/mouse_name"
   echo "Find your mouse device name with the command xinput"
@@ -19,6 +20,12 @@ function mouse_disable() {
   xinput disable "$mouse_name"
   echo "off" > /tmp/mouse_state
   echo "Disabled $mouse_name"
+  exit 0
+}
+
+function mouse_get() {
+  xinput list-props "$mouse_name" | grep "Device Enabled" | awk "{printf \$4}"
+  echo
   exit 0
 }
 
@@ -50,6 +57,8 @@ elif [[ "$1" == "on" ]]; then
   mouse_enable
 elif [[ "$1" == "off" ]]; then
   mouse_disable
+elif [[ "$1" == "get" ]]; then
+  mouse_get
 
 else
   print_help
