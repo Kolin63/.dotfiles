@@ -52,3 +52,4 @@ sym ~/.dotfiles/vimrc                   ~/.vimrc
 sym ~/.dotfiles/vimrc                   /root/.vimrc sudo
 sym ~/.dotfiles/xsession                ~/.xsession
 sym ~/.dotfiles/mimeapps.list           ~/.config/mimeapps.list
+sym ~/.dotfiles/bookmarks               ~/.config/qutebrowser/bookmarks/urls
