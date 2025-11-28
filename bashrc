@@ -115,6 +115,8 @@ alias ts="tmux-sessionizer"
 
 alias windows="sudo grub-reboot 4; sudo reboot now"
 
+alias copy="xclip -selection clipboard"
+
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/usr/scripts"
 export PATH="$PATH:$HOME/.local/share/applications"
@@ -132,6 +134,8 @@ export LPDEST="HL2270DW"
 export BC_ENV_ARGS="$HOME/.dotfiles/bc"
 
 export TZ="America/New_York"
+
+export MC="$HOME/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/instances"
 
 # java stuff
 export CLASSPATH=build/classes/java/main/
