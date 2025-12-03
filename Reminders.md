@@ -70,3 +70,8 @@ Plug in the drive, then run `lsblk` to find the name. It will be something like
 ```bash
 sudo dd bs=4M if=/path/to/file.iso of=/dev/sdX status=progress oflag=sync
 ```
+
+## Wake on LAN
+```bash
+sudo ethtool -s enp6s0 wol g
+```
