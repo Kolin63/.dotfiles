@@ -1,6 +1,6 @@
 CXX := g++
 CXXFLAGS := -std=c++20 -Wall -Wextra -Wpedantic -MMD -MP
-LDLIBS :=
+LDFLAGS :=
 
 SRC_DIR := src
 BUILD_DIR := build
@@ -14,7 +14,7 @@ TARGET := program
 all: $(TARGET)
 
 $(TARGET): $(OBJS)
-	$(CXX) $(CXXFLAGS) -o $@ $^
+	$(CXX) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
 
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp
 	@mkdir -p $(BUILD_DIR)
