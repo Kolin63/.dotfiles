@@ -123,6 +123,7 @@ export PATH="$PATH:$HOME/.local/share/applications"
 export PATH="$PATH:$HOME/.local/kitty.app/bin"
 export PATH="$PATH:$HOME/.dotfiles/scripts"
 export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/.cargo/env"
 
 export MANPAGER="nvim +Man!"
 
