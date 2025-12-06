@@ -148,3 +148,6 @@
 💬 Speech Balloon
 🪄 Magic Wand
 🏗️ Building Construction Crane
+🐖 Pig
+🐽 Pig Snout Nose
+🐷 Pig Face
