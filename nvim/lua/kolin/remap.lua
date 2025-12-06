@@ -98,8 +98,8 @@ vim.keymap.set({ 'i', 'n', 'v' }, "<S-Right>", "<nop>")
 vim.keymap.set("n", "<leader>ch", function() vim.cmd("!chubby") end)
 
 -- chubby on write
-vim.api.nvim_create_autocmd({ "BufWritePost", "FileWritePost" }, {
-  callback = function()
-    vim.cmd("silent exec \"!chubby &> /dev/null &\"")
-  end
-})
+-- vim.api.nvim_create_autocmd({ "BufWritePost", "FileWritePost" }, {
+--   callback = function()
+--     vim.cmd("silent exec \"!chubby &> /dev/null &\"")
+--   end
+-- })
