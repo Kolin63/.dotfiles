@@ -1,5 +1,5 @@
 return {
-  'nvim-web-devicons',
+  'nvim-tree/nvim-web-devicons',
 
   opts = {
     -- your personal icons can go here (to override)
@@ -44,7 +44,7 @@ return {
         icon = "",
         color = "#c4f2ef",
         name = "Clangformat"
-      }
+      },
     },
     -- same as `override` but specifically for overrides by extension
     -- takes effect when `strict` is true
@@ -65,5 +65,15 @@ return {
       --   name = "Apple",
       -- },
     },
-  }
+  },
+
+  config = function()
+    require("nvim-web-devicons").set_icon({
+      mcfunction = {
+        icon = "󰍳",
+        color = "#52a535",
+        name = "Mcfunction"
+      },
+    })
+  end
 }

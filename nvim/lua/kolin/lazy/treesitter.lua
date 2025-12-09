@@ -2,9 +2,24 @@ return {
   "nvim-treesitter/nvim-treesitter", build = ':TSUpdate',
 
   config = function ()
+
+    local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
+
+    parser_config.mcfunction = {
+      install_info = {
+        url = "https://github.com/theusaf/tree-sitter-mcfunction-lang.git",
+        files = {
+          "src/parser.c",
+          -- "src/binding.cc",
+          "src/tree_sitter/parser.h",
+        },
+        branch = "master",
+      },
+    }
+
     require'nvim-treesitter.configs'.setup {
       -- A list of parser names, or "all" (the listed parsers MUST always be installed)
-      ensure_installed = { "cpp", "json", "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline" },
+      ensure_installed = { "cpp", "json", "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline", "mcfunction" },
 
       indent = { enable = true },
 

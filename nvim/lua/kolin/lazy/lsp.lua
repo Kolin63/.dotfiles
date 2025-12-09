@@ -28,5 +28,8 @@ return {
     })
 
     vim.lsp.config("jdtls", {})
+
+    vim.cmd("autocmd BufNewFile,BufRead *.mcfunction set filetype=mcfunction")
+    vim.lsp.enable('spyglassmc_language_server')
   end
 }
