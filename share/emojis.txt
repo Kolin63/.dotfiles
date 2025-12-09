@@ -151,3 +151,4 @@
 🐖 Pig
 🐽 Pig Snout Nose
 🐷 Pig Face
+🐧 Penguin
