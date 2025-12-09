@@ -105,7 +105,7 @@ if [ -e /bin/lsd ]; then
 fi
 
 export EDITOR="nvim"
-nvim --version &> /dev/null || export EDITOR="vi"
+nvim --version &> /dev/null && export MANPAGER="nvim +Man!" || export EDITOR="vi"
 
 alias v="$EDITOR"
 
@@ -124,8 +124,6 @@ export PATH="$PATH:$HOME/.local/kitty.app/bin"
 export PATH="$PATH:$HOME/.dotfiles/scripts"
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/.cargo/env"
-
-export MANPAGER="nvim +Man!"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
