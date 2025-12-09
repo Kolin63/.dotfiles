@@ -73,5 +73,7 @@ sudo dd bs=4M if=/path/to/file.iso of=/dev/sdX status=progress oflag=sync
 
 ## Wake on LAN
 ```bash
-sudo ethtool -s enp6s0 wol g
+nmcli connection show # find the connection name for ethernet
+sudo nmcli connection modify "<CONNECTION_NAME>" 802-3-ethernet.wake-on-lan magic
+sudo nmcli connection up "<CONNECTION_NAME>" # re-apply connection
 ```
