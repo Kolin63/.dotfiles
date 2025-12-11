@@ -152,3 +152,4 @@
 🐽 Pig Snout Nose
 🐷 Pig Face
 🐧 Penguin
+💽 Computer Disc
