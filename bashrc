@@ -124,6 +124,7 @@ export PATH="$PATH:$HOME/.local/kitty.app/bin"
 export PATH="$PATH:$HOME/.dotfiles/scripts"
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/.cargo/env"
+export PATH="$PATH:/home/colin/.deno/env"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
