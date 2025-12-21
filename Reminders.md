@@ -39,7 +39,7 @@ sudo netplan apply
 Then reboot.
 
 ## View Disk Usage
-Use `df -h`
+Use `df -h` for total disk usage. Use `du -sh <dir>` for directory size.
 
 ## Enable GPU Acceleration
 [here](https://www.tech2geek.net/how-to-enable-gpu-acceleration-on-linux-nvidia-
