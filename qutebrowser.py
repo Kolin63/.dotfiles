@@ -37,8 +37,8 @@ c.url.searchengines = {
   "mw": "https://www.merriam-webster.com/dictionary/{}",
   "vocab": "https://www.vocabulary.com/dictionary/{}",
   "cppr": "https://duckduckgo.com/?sites=cppreference.com&q={}&ia=web",
-  "mc": "https://minecraft.wiki/w/{}",
-  "create": "https://create.fandom.com/wiki/{}"
+  "mcw": "https://minecraft.wiki/w/{}",
+  "crw": "https://create.fandom.com/wiki/{}"
 }
 
 c.content.tls.certificate_errors = "load-insecurely"
