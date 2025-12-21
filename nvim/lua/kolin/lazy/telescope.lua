@@ -11,7 +11,7 @@ return {
       builtin.find_files({ no_ignore = true }) end,
       { desc = 'Telescope find files' })
     vim.keymap.set('n', '<leader>ps', function()
-      builtin.grep_string({ search = vim.fn.input("Grep > ") }) end,
+      builtin.live_grep() end,
       { desc = 'Telescope find string occurence' })
   end
 }
