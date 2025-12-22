@@ -124,7 +124,6 @@ export PATH="$PATH:$HOME/.local/kitty.app/bin"
 export PATH="$PATH:$HOME/.dotfiles/scripts"
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/.cargo/env"
-export PATH="$PATH:/home/colin/.deno/env"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
@@ -162,6 +161,8 @@ fi
 
 # python stuff
 source venv/bin/activate &> /dev/null
+
+. $HOME/.deno/env
 
 [ -e "$HOME/.local/bin/oh-my-posh" ] && eval "$(oh-my-posh init bash --config '~/.dotfiles/gruvbox.omp.json')" &> /dev/null
 
