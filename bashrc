@@ -139,6 +139,7 @@ export MC="$HOME/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/ins
 
 # java stuff
 export CLASSPATH=build/classes/java/main/
+alias gradlew="bash gradlew"
 
 if [ -e ~/.dotfiles/lbashrc ]; then
   source ~/.dotfiles/lbashrc
