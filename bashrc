@@ -117,6 +117,8 @@ alias windows="sudo grub-reboot 4; sudo reboot now"
 
 alias copy="xclip -selection clipboard"
 
+alias open="pigpen"
+
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/usr/scripts"
 export PATH="$PATH:$HOME/.local/share/applications"
