@@ -1,0 +1,2 @@
+pdf = zathura %f
+png jpg jpeg = qutebrowser %f

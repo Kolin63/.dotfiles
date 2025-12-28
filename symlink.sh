@@ -51,5 +51,5 @@ sym ~/.dotfiles/tmux.conf               ~/.tmux.conf
 sym ~/.dotfiles/vimrc                   ~/.vimrc
 sym ~/.dotfiles/vimrc                   /root/.vimrc sudo
 sym ~/.dotfiles/xsession                ~/.xsession
-sym ~/.dotfiles/mimeapps.list           ~/.config/mimeapps.list
+sym ~/.dotfiles/pigpen.txt              ~/.config/pigpen/config.txt
 sym ~/.dotfiles/bookmarks               ~/.config/qutebrowser/bookmarks/urls
