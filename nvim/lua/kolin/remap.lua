@@ -58,9 +58,6 @@ vim.keymap.set("n", "Y", "yy")
 -- Big C to cc
 vim.keymap.set("n", "C", "cc")
 
--- Ctrl d deletes word backwards in insert
-vim.keymap.set("i", "<C-d>", " <Esc>bdei<Esc>lxi")
-
 -- Emacs controls (dont worry guys its ok)
 vim.keymap.set("i", "<C-f>", "<Esc>la")
 vim.keymap.set("n", "<C-f>", "l")
