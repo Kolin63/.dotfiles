@@ -5,7 +5,7 @@ vim.keymap.set("n", "<leader>pv", require('oil').open)
 vim.keymap.set("n", "<C-t>", function()
     vim.cmd.tabnew()
     require('oil').open()
-    require('telescope.builtin').find_files({ no_ignore = true })
+    require('telescope.builtin').find_files()
 end)
 
 vim.keymap.set("n", "<Tab>", vim.cmd.tabn)
