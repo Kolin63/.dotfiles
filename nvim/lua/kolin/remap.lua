@@ -58,11 +58,8 @@ vim.keymap.set("n", "Y", "yy")
 -- Big C to cc
 vim.keymap.set("n", "C", "cc")
 
--- Alt d deletes word in insert mode
-vim.keymap.set("i", "<M-d>", "<Esc>diwi")
-
--- Ctrl d maps to backspace in insert mode
-vim.keymap.set("i", "<C-d>", "<BS>")
+-- Ctrl d deletes word backwards in insert
+vim.keymap.set("i", "<C-d>", " <Esc>bdei<Esc>lxi")
 
 -- Emacs controls (dont worry guys its ok)
 vim.keymap.set("i", "<C-f>", "<Esc>la")
