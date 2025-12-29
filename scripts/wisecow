@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+json="$(curl -sk https://api.quotable.io/quotes/random)"
+content="$(echo $json | jq '.[0]["content"]')"
+author="$(echo $json | jq -r '.[0]["author"]')"
+
+body="$content\n\n  - $author"
+
+echo -e "$body" | cowsay
