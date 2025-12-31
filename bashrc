@@ -126,6 +126,8 @@ export PATH="$PATH:$HOME/.local/kitty.app/bin"
 export PATH="$PATH:$HOME/.dotfiles/scripts"
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/.cargo/env"
+export PATH="$PATH:$HOME/.local/share/emsdk"
+export PATH="$PATH:$HOME/.local/share/emsdk/upstream/emscripten"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
@@ -141,6 +143,9 @@ export MC="$HOME/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/ins
 # java stuff
 export CLASSPATH=build/classes/java/main/
 alias gradlew="bash gradlew"
+
+export EMSDK=$HOME/.local/share/emsdk
+export EMSDK_NODE=$HOME/.local/share/emsdk/node/22.16.0_64bit/bin/node
 
 if [ -e ~/.dotfiles/lbashrc ]; then
   source ~/.dotfiles/lbashrc
