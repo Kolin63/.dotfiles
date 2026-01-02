@@ -77,3 +77,18 @@ nmcli connection show # find the connection name for ethernet
 sudo nmcli connection modify "<CONNECTION_NAME>" 802-3-ethernet.wake-on-lan magic
 sudo nmcli connection up "<CONNECTION_NAME>" # re-apply connection
 ```
+
+## Compiling a C++ Project to a Library
+I had to do this with the Extism CPP SDK because they only had CMake
+instructions but I HATE CMake (not that much but I don't love it).
+```bash
+g++ -std=c++23 -Iinclude -c src/*.cpp
+#                        ^^
+#                this does the magic
+
+# then a bunch of .o object files will be made
+# so we use the ar command to make it to .a
+ar rcs libextismcpp.a *.o
+#      ^^^^^^^^^^^^
+#      what you want to call it
+```
