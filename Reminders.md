@@ -92,3 +92,8 @@ ar rcs libextismcpp.a *.o
 #      ^^^^^^^^^^^^
 #      what you want to call it
 ```
+
+## Format a drive
+```bash
+sudo mkfs -t ext4 /dev/xyz
+```
