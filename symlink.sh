@@ -52,3 +52,4 @@ sym ~/.dotfiles/vimrc                   /root/.vimrc sudo
 sym ~/.dotfiles/xsession                ~/.xsession
 sym ~/.dotfiles/pigpen.txt              ~/.config/pigpen/config.txt
 sym ~/.dotfiles/bookmarks               ~/.config/qutebrowser/bookmarks/urls
+sym ~/.dotfiles/ly-dm-lockscreen.ini    /etc/ly/config.ini sudo
