@@ -19,3 +19,5 @@ picom &> /dev/null &
 webtest
 
 feh --bg-scale ~/.dotfiles/dwm/wallpaper.jpg
+
+$HOME/.dotfiles/xlsbashrc
