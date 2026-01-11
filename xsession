@@ -14,7 +14,7 @@ fi
 # dwm status
 $HOME/.dotfiles/dwm/daemonstatus.sh &> /dev/null &
 
-# picom &> /dev/null &
+picom &> /dev/null &
 
 webtest
 
