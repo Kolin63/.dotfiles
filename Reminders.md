@@ -7,8 +7,8 @@ output device. See [this StackOverflow
 answer](https://askubuntu.com/questions/14077/) for more information.
 
 ## Mounting Drives
-To find the name of the drive, use `lsblk`. The name will be something like sdb
-or sdb1 or sdc. Run `sudo mount /dev/sdb /mnt/directory -m` to mount it to a
+To find the name of the drive, use `lsblk`. The name will be something like
+sdb or sdb1 or sdc. Run `sudo mount /dev/sdb /mnt/directory -m` to mount it to a
 directory. The -m means make a new directory if it doesn't already exist.
 
 To unmount, use `sudo umount /mnt/directory`
@@ -97,3 +97,60 @@ ar rcs libextismcpp.a *.o
 ```bash
 sudo mkfs -t ext4 /dev/xyz
 ```
+
+## BIOS Doesn't show boot option
+First, make sure in your BIOS settings that you boot from UEFI devices and not
+legacy devices. If that doesn't work, do this to make sure Grub is properly
+installed:
+```bash
+# use the proper drive partition
+mount /dev/nvme0n1p1 /boot/efi
+
+grub-install --target=x86_64-efi \
+  --efi-directory=/boot/efi \
+  --bootloader-id=GRUB
+
+# regen config
+grub-mkconfig -o /boot/grub/grub.cfg
+
+# check uefi entries
+# should see something like: Boot0003* GRUB
+efibootmgr
+```
+
+## Wrong Screen Resolution
+If `uname -r` contains arch:
+```bash
+sudo pacman -S linux-headers
+```
+
+If it contains lts:
+```bash
+sudo pacman -S linux-lts-headers
+```
+
+And then:
+```bash
+sudo pacman -S nvidia nvidia-utils nvidia-settings
+```
+
+## Wrong Screen Resolution on DWM
+It might be a problem with an incorrect DPI. Run this to see what DPI it thinks
+you have:
+```bash
+xdpyinfo | grep resolution
+```
+and use a DPI detector website to check what it should be.
+
+Edit `~/.Xresources` and add:
+```
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintslight
+```
+Then run
+```bash
+xrdb -merge ~/.Xresources
+```
+and restart DWM.
