@@ -15,7 +15,10 @@ if [ -e /bin/lsd ]; then
 fi
 
 export EDITOR="nvim"
-(which nvim &> /dev/null && export EDITOR="nvim" && export MANPAGER="nvim +Man!") || (which vi &> /dev/null && export EDITOR="vi") || (which vim &> /dev/null && export EDITOR="vim")
+export MANPAGER="less"
+which vi &> /dev/null && export EDITOR="vi"
+which vim &> /dev/null && export EDITOR="vim"
+which nvim &> /dev/null && export EDITOR="nvim" && export MANPAGER="nvim +Man!"
 
 alias v="$EDITOR"
 
