@@ -45,4 +45,6 @@ c.content.tls.certificate_errors = "load-insecurely"
 c.content.javascript.clipboard = "access"
 c.content.notifications.enabled = False
 
+c.fonts.default_family = "JetBrainsMono Nerd Font"
+
 config.source("gruvbox.py")
