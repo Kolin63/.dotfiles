@@ -1,27 +1,4 @@
 #!/usr/bin/env bash
 
-# start window manager
-if [[ -e /bin/dwm ]] && [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
-  echo Starting Window Manager...
-  sleep 1
-  exec startx
-fi
-
-# hides the mouse after 3 seconds of inactivity
-unclutter -idle 3 &> /dev/null &
-
-# disable mouse by default
-mousetoggle off
-xdotool mousemove 0 0
-
 # fetch git repos
 autogitfetch &> /dev/null
-
-# dwm status
-$HOME/.dotfiles/dwm/daemonstatus.sh &> /dev/null &
-
-picom &> /dev/null &
-
-webtest
-
-redshift -l 40.9993216:-74.1113856 &> /dev/null &

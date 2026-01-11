@@ -2,3 +2,4 @@
 [home]>[kpshift]
 [kp-home]>[kpshift]
 [end]>[`]
+[caps]>[escape]

@@ -11,8 +11,11 @@ if [ ! -e /tmp/.sbashrcWasRan ]; then
   fi
 fi
 
-[ -e /bin/dwm ] && [ -e /bin/feh ] && feh --bg-scale ~/.dotfiles/dwm/wallpaper.jpg
+# dwm status
+$HOME/.dotfiles/dwm/daemonstatus.sh &> /dev/null &
 
-while [ -e /bin/dwm ]; do
-  dwm
-done
+# picom &> /dev/null &
+
+webtest
+
+feh --bg-scale ~/.dotfiles/dwm/wallpaper.jpg
