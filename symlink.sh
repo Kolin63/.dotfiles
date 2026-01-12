@@ -36,6 +36,13 @@ function sym() {
   printf "${NC}"
 }
 
+mkdir ~/.config &> /dev/null
+mkdir ~/.config/alacritty &> /dev/null
+mkdir ~/.config/gh &> /dev/null
+mkdir ~/.config/picom &> /dev/null
+mkdir ~/.config/qutebrowser/bookmarks -p &> /dev/null
+mkdir ~/.config/pigpen &> /dev/null
+
 sym ~/.dotfiles/nvim                    ~/.config/nvim
 sym ~/.dotfiles/dwm/dwm                 /usr/bin/dwm sudo
 sym ~/.dotfiles/alacritty.toml          ~/.config/alacritty/alacritty.toml
