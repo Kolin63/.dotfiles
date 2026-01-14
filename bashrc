@@ -79,11 +79,11 @@ fi
 # python stuff
 source venv/bin/activate &> /dev/null
 
-. $HOME/.deno/env
+. $HOME/.deno/env &> /dev/null
 
 [ "$XDG_SESSION_TYPE" = "x11" ] && [ -e "$HOME/.local/bin/oh-my-posh" ] && eval "$(oh-my-posh init bash --config '~/.dotfiles/gruvbox.omp.json')" &> /dev/null
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-source /home/colin/.local/share/bash-completion/completions/deno.bash
+source /home/colin/.local/share/bash-completion/completions/deno.bash &> /dev/null
