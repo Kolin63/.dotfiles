@@ -154,3 +154,12 @@ Then run
 xrdb -merge ~/.Xresources
 ```
 and restart DWM.
+
+## Wrong Timezone
+```bash
+sudo ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
+sudo hwclock --systohc
+
+# Verify:
+timedatectl
+```
