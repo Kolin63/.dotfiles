@@ -20,4 +20,4 @@ webtest
 
 feh --bg-scale ~/.dotfiles/dwm/wallpaper.jpg
 
-$HOME/.dotfiles/xlsbashrc
+$HOME/.dotfiles/xlsbashrc &
