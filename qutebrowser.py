@@ -11,6 +11,8 @@ config.bind("<Ctrl-=>", "zoom-in")
 config.bind("<Ctrl-->", "zoom-out")
 config.bind("<Ctrl-0>", "zoom 100")
 
+config.bind("<Ctrl-a>", "fake-key <Ctrl-a>")
+
 c.aliases = {
 	"q": "close",
 	"qa": "quit",
@@ -38,7 +40,8 @@ c.url.searchengines = {
   "vocab": "https://www.vocabulary.com/dictionary/{}",
   "cppr": "https://duckduckgo.com/?sites=cppreference.com&q={}&ia=web",
   "mcw": "https://minecraft.wiki/w/{}",
-  "crw": "https://create.fandom.com/wiki/{}"
+  "crw": "https://create.fandom.com/wiki/{}",
+  "hyw": "https://hytalewiki.org/w/{}",
 }
 
 c.content.tls.certificate_errors = "load-insecurely"
