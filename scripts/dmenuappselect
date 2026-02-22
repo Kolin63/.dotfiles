@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+(exec $(compgen -c | dmenu -fn "JetBrainsMono Nerd Font:size=10")) &> /dev/null

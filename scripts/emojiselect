@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-emoji=$(cat $HOME/.dotfiles/share/emojis.txt | dmenu -i -l 30 | awk '{printf "%s", $1;}')
+emoji=$(cat $HOME/.dotfiles/share/emojis.txt | dmenu -i -l 30 -fn "JetBrainsMono Nerd Font:size=10" | awk '{printf "%s", $1;}')
 if [ "$emoji" == "" ]; then exit 1; fi
 echo -n "$emoji" | xclip -selection clipboard
 notify-send "Success" "Emoji copied to clipboard"
