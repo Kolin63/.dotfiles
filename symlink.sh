@@ -56,3 +56,4 @@ sym ~/.dotfiles/pigpen.txt              ~/.config/pigpen/config.txt
 sym ~/.dotfiles/bookmarks               ~/.config/qutebrowser/bookmarks/urls
 sym ~/.dotfiles/ly-dm-lockscreen.ini    /etc/ly/config.ini sudo
 sym ~/.dotfiles/keyd.conf               /etc/keyd/default.conf sudo
+sym ~/.dotfiles/keydapp.conf            ~/.config/keyd/app.conf
