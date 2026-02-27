@@ -14,6 +14,8 @@ fi
 # dwm status
 $HOME/.dotfiles/dwm/daemonstatus.sh &> /dev/null &
 
+keyd-application-mapper -d
+
 picom &> /dev/null &
 
 webtest
