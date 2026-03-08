@@ -30,8 +30,6 @@ alias windows="sudo grub-reboot 4; sudo reboot now"
 
 alias copy="xclip -selection clipboard"
 
-alias open="pigpen"
-
 alias yay="yay --answerclean None --answerdiff None"
 
 export PATH="$PATH:$HOME/.local/bin"
