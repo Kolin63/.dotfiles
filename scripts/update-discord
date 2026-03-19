@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# credit:
+# https://github.com/opsec-bot/arch-discord-updater/blob/main/update-discord.sh
+
 # Variables
 DISCORD_URL="https://discord.com/api/download?platform=linux&format=tar.gz"
 TEMP_DIR="/tmp/discord_update"
@@ -15,7 +18,7 @@ echo "Stopping Discord..."
 pkill Discord 2>/dev/null
 
 # Remove old installation
-echo "Removing old Discord..." 
+echo "Removing old Discord..."
 sudo rm -rf "$INSTALL_DIR"
 
 # Create temp directory
