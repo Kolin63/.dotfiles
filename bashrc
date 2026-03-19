@@ -51,7 +51,7 @@ export BC_ENV_ARGS="$HOME/.dotfiles/bc"
 
 export TZ="America/New_York"
 
-export MC="$HOME/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/instances"
+export MC="$HOME/.local/share/PandoraLauncher/instances"
 
 # java stuff
 export CLASSPATH=build/classes/java/main/
