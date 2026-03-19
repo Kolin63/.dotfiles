@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+rm -rf /tmp/update-discord-checker
+mkdir -p /tmp/update-discord-checker
+
+wget "https://discord.com/api/download?platform=linux&format=tar.gz" -O /tmp/update-discord-checker/discord.tar.gz
+tar -xf /tmp/update-discord-checker/discord.tar.gz --directory /tmp/update-discord-checker
+latest=$(cat /tmp/update-discord-checker/Discord/resources/build_info.json | jq '.version' -r)
+
+current=$(cat /opt/discord/resources/build_info.json | jq '.version' -r)
+
+echo -e "\n\n\n"
+echo -e "\e[1;37mCurrent version: \e[1;32m$current"
+echo -e "\e[1;37mLatest  version: \e[1;32m$latest\e[0m"
+echo -e "\n\n\n"
+
+if [[ "$current" != "$latest" ]]; then
+  notify-send "Discord Update Available!" "Current version: $current\nLatest version: $latest"
+fi
