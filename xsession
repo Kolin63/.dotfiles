@@ -14,6 +14,9 @@ fi
 # dwm status
 $HOME/.dotfiles/dwm/daemonstatus.sh &> /dev/null &
 
+# hides the mouse after 3 seconds of inactivity
+unclutter -idle 3 &> /dev/null &
+
 keyd-application-mapper -d
 
 picom &> /dev/null &
