@@ -6,7 +6,7 @@ return {
     config = function()
       require("gruvbox").setup({
         overrides = {
-          TabLineFill = { fg = "#d5c4a1", bg = "#504945" },
+          TabLineFill = { fg = "#a89984", bg = "#504945" },
           TabLineSel = { fg = "#282828", bg = "#b8bb26" },
         }
       })
