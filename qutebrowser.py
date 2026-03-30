@@ -42,6 +42,7 @@ c.url.searchengines = {
   "mcw": "https://minecraft.wiki/w/{}",
   "crw": "https://create.fandom.com/wiki/{}",
   "hyw": "https://hytalewiki.org/w/{}",
+  "wiki": "https://wikipedia.org/wiki/{}",
 }
 
 c.content.tls.certificate_errors = "load-insecurely"
