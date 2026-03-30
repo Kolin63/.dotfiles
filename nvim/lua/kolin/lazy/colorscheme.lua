@@ -4,39 +4,13 @@ return {
     enabled = true,
     priority = 1000,
     config = function()
-      vim.cmd([[colorscheme gruvbox]])
-    end
-  },
-
-  {
-    "folke/tokyonight.nvim",
-    enabled = false,
-    priority = 1000,
-    config = function ()
-      vim.cmd([[colorscheme tokyonight]])
-    end
-  },
-
-  {
-    "rose-pine/neovim",
-    enabled = false,
-    name = "rose-pine",
-    config = function()
-      require("rose-pine").setup({
-        variant = "main", -- auto, main, moon, or dawn
+      require("gruvbox").setup({
+        overrides = {
+          TabLineFill = { fg = "#d5c4a1", bg = "#504945" },
+          TabLineSel = { fg = "#282828", bg = "#b8bb26" },
+        }
       })
-
-      vim.cmd([[colorscheme rose-pine]])
-    end
-  },
-
-  {
-    "catppuccin/nvim",
-    enabled = false,
-    name = "catppuccin",
-    priority = 1000,
-    config = function ()
-      vim.cmd([[colorscheme catppuccin-macchiato]])
+      vim.cmd([[colorscheme gruvbox]])
     end
   }
 }
