@@ -1,0 +1,22 @@
+{
+  "palette": {
+    "yellow": "#fabd2f",
+    "background": "#282828"
+  },
+  "terminal_background": "p:background",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "p:yellow",
+          "style": "plain",
+          "template": "$ ",
+          "type": "path"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "version": 4
+}
