@@ -79,6 +79,13 @@ source venv/bin/activate &> /dev/null
 
 . $HOME/.deno/env &> /dev/null
 
+# this makes it so that the cmd prompt starts at bottom
+PROMPT_COMMAND="printf '\033[999;1H'${PROMPT_COMMAND:+;$PROMPT_COMMAND}"
+clear() {
+    command clear
+    printf '\033[999;1H'
+}
+
 [ -e "$HOME/.local/bin/oh-my-posh" ] && eval "$(oh-my-posh init bash --config '~/.dotfiles/colin.omp.json')" &> /dev/null
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
