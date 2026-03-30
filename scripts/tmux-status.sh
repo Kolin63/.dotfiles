@@ -40,6 +40,7 @@ git_char_modified="~"
 git_char_staged="+"
 
 git_status_raw="$(git -C $dir status -sbvv --show-stash --porcelain=v2 --ahead-behind)"
+git_status_return="$?"
 
 git_branch="$(echo "$git_status_raw" | grep -o --color=NEVER "^# branch\.head .*$" | awk '{print($3)}')"
 
@@ -111,6 +112,10 @@ git_raw="$git_branch ${git_ab}${git_working}${git_staging}${git_stash}"
 git_raw="$(echo $git_raw)"
 git_raw_len="$(printf "$git_raw" | wc -m)"
 git="#[bg=$git_bg, fg=#282828] $git_raw #[bg=default, fg=default]"
+if [[ $git_status_return -ne 0 ]]; then
+  git_raw_len=0
+  git=""
+fi
 
 # calculate padding
 pad_left_n="$(( $width / 2 - $git_raw_len / 2 - $tags_raw_len ))"
