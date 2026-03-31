@@ -93,6 +93,11 @@ ar rcs libextismcpp.a *.o
 #      what you want to call it
 ```
 
+## Compiling C to Shared Object
+```bash
+gcc main.c -shared -o main.so
+```
+
 ## Format a drive
 ```bash
 sudo mkfs -t ext4 /dev/xyz
