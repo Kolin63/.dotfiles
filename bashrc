@@ -60,6 +60,9 @@ alias gradlew="bash gradlew"
 export EMSDK=$HOME/.local/share/emsdk
 export EMSDK_NODE=$HOME/.local/share/emsdk/node/22.16.0_64bit/bin/node
 
+# this is a little hack to stop ctrl-d from closing the terminal
+export IGNOREEOF=32767
+
 if [ -e ~/.dotfiles/lbashrc ]; then
   source ~/.dotfiles/lbashrc
 fi
