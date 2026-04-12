@@ -27,6 +27,10 @@ vim.opt.syntax = on
 vim.opt.termguicolors = true
 vim.opt.bg = dark
 
+-- Folding
+vim.opt.foldmethod = "indent"
+vim.cmd('autocmd BufEnter * set foldlevel=999')
+
 -- Faster Update Times
 vim.opt.updatetime = 50
 
