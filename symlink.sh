@@ -35,7 +35,6 @@ mkdir ~/.config &> /dev/null
 mkdir ~/.config/alacritty &> /dev/null
 mkdir ~/.config/gh &> /dev/null
 mkdir ~/.config/picom &> /dev/null
-mkdir ~/.config/qutebrowser/bookmarks -p &> /dev/null
 mkdir ~/.config/pigpen &> /dev/null
 
 sym ~/.dotfiles/nvim                    ~/.config/nvim
@@ -53,7 +52,6 @@ sym ~/.dotfiles/vimrc                   ~/.vimrc
 sym ~/.dotfiles/vimrc                   /root/.vimrc sudo
 sym ~/.dotfiles/xsession                ~/.xsession
 sym ~/.dotfiles/pigpen.txt              ~/.config/pigpen/config.txt
-sym ~/.dotfiles/bookmarks               ~/.config/qutebrowser/bookmarks/urls
 sym ~/.dotfiles/ly-dm-lockscreen.ini    /etc/ly/config.ini sudo
 sym ~/.dotfiles/keyd.conf               /etc/keyd/default.conf sudo
 sym ~/.dotfiles/keydapp.conf            ~/.config/keyd/app.conf
