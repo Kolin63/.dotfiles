@@ -32,6 +32,8 @@ alias copy="xclip -selection clipboard"
 
 alias yay="yay --answerclean None --answerdiff None"
 
+alias open="xdg-open"
+
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/usr/scripts"
 export PATH="$PATH:$HOME/.local/share/applications"
