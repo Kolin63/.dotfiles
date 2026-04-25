@@ -12,7 +12,17 @@ host_raw_len="$(printf "$host_raw" | wc -m)"
 host="\e[0;90m$host_raw"
 
 # padding
-cols="$(tput cols)"
+if [[ ! -z "$TMUX" ]]; then
+  if [[ -z "$cols" ]]; then
+    cols="$(tmux display-message -p "#{pane_width}")"
+  fi
+fi
+if [[ -z "$cols" ]]; then
+  cols="$(tput cols)"
+fi
+if [[ -z "$cols" ]]; then
+  cols="$(stty size | awk '{print $2}')"
+fi
 if [[ -z "$cols" ]]; then
   cols="80"
 fi
