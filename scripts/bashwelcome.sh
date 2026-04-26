@@ -13,9 +13,7 @@ host="\e[0;90m$host_raw"
 
 # padding
 if [[ ! -z "$TMUX" ]]; then
-  if [[ -z "$cols" ]]; then
-    cols="$(tmux display-message -p "#{pane_width}")"
-  fi
+  exit 0
 fi
 if [[ -z "$cols" ]]; then
   cols="$(tput cols)"
@@ -36,5 +34,4 @@ pad_left="$(printf "%-${pad_left_n}s" " ")"
 pad_right_n=$(( $cols / 2 - $hora_raw_len / 2 - $host_raw_len - 1 ))
 pad_right="$(printf "%-${pad_right_n}s" " ")"
 
-printf "\033[999;1H"
 echo -e "\n  ${greet}${pad_left}${hora}${pad_right}${host}\e[0m  \n"

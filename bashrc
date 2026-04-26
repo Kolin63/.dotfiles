@@ -54,6 +54,7 @@ export BC_ENV_ARGS="$HOME/.dotfiles/bc"
 export TZ="America/New_York"
 
 export MC="$HOME/.local/share/PandoraLauncher/instances"
+export END="$HOME/.local/share/endian"
 
 # java stuff
 export CLASSPATH=build/classes/java/main/
@@ -84,19 +85,12 @@ source venv/bin/activate &> /dev/null
 
 . $HOME/.deno/env &> /dev/null
 
-# this makes it so that the cmd prompt starts at bottom
-# PROMPT_COMMAND="\
-#   echo ''\
-#   echo '  Hello, Colin'\
-#   echo -e \"  \e[0;90m$(whoami)@$(cat /etc/hostname)\"\
-#   echo -e \"  $(date)\e[0m\"\
-#   printf '\033[999;1H'\
-#   ${PROMPT_COMMAND:+;$PROMPT_COMMAND}"
 clear() {
     command clear
     printf '\033[999;1H'
 }
 
+printf "\033[999;1H"
 bash "$HOME/.dotfiles/scripts/bashwelcome.sh"
 
 [ -e "$HOME/.local/bin/oh-my-posh" ] && eval "$(oh-my-posh init bash --config '~/.dotfiles/colin.omp.json')" &> /dev/null
