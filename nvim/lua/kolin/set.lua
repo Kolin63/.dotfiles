@@ -3,7 +3,7 @@ vim.opt.rnu = true
 vim.opt.number = true
 
 -- Line Wrap
-vim.opt.wrap = false
+vim.opt.wrap = true
 
 -- Tabs
 vim.opt.tabstop = 2
