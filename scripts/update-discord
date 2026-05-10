@@ -43,7 +43,7 @@ echo "Installing new Discord..."
 sudo mv "$TEMP_DIR/Discord" "$INSTALL_DIR"
 
 # Create symlink
-sudo ln -sf "$INSTALL_DIR/Discord" "$BIN_LINK"
+sudo ln -sf "$INSTALL_DIR/discord" "$BIN_LINK"
 
 # Cleanup
 rm -rf "$TEMP_DIR"
