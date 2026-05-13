@@ -29,15 +29,27 @@ for i in $window_index_list; do
 done
 
 # git block
-git_char_working=""
-git_char_staging=""
-git_char_stash=""
-git_char_push="↑"
-git_char_pull="↓"
-git_char_up_to_date="●"
-git_char_untracked="?"
-git_char_modified="~"
-git_char_staged="+"
+if [[ -f "/tmp/nonerdfont" ]]; then
+  git_char_working="🗈"
+  git_char_staging="🗹"
+  git_char_stash="🖫"
+  git_char_push="↑"
+  git_char_pull="↓"
+  git_char_up_to_date="●"
+  git_char_untracked="?"
+  git_char_modified="~"
+  git_char_staged="+"
+else
+  git_char_working=""
+  git_char_staging=""
+  git_char_stash=""
+  git_char_push="↑"
+  git_char_pull="↓"
+  git_char_up_to_date="●"
+  git_char_untracked="?"
+  git_char_modified="~"
+  git_char_staged="+"
+fi
 
 git_status_raw="$(git -C $dir status -sbvv --show-stash --porcelain=v2 --ahead-behind)"
 git_status_return="$?"

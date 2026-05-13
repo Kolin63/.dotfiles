@@ -9,7 +9,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-if [ -e /bin/lsd ]; then
+if [[ -e "/bin/lsd" && ! -f "/tmp/nonerdfont" ]]; then
   alias ls="lsd"
   alias tree="lsd --tree"
 fi
