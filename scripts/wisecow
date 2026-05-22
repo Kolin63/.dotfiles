@@ -2,7 +2,7 @@
 
 line=$(( ($RANDOM % 142) + 1 ))
 
-content=$(cat "$HOME/.dotfiles/share/artofwar.txt" | head -$line | tail -1)
+content=$(cat "$HOME/.dotfiles/share/artofwar.txt" | head -$line | tail -1 | fold -w 40 -s)
 
 body="$content\n\n  - Sun Tzu, The Art of War"
 
