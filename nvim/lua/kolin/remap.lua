@@ -3,8 +3,7 @@ vim.keymap.set("n", "<leader>pv", require('oil').open)
 
 -- Tab Remaps
 vim.keymap.set("n", "<C-t>", function()
-    vim.cmd.tabnew()
-    require('oil').open()
+  vim.cmd("tab split")
 end)
 
 vim.keymap.set("n", "<Tab>", vim.cmd.tabn)
