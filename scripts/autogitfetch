@@ -11,8 +11,10 @@ done
 
 cd "$HOME/.dotfiles/dwm" && make
 
-if [[ -e "$HOME/.ssh/authorized_keys" ]]; then
-  wget https://kolin63.com/ssh -O "$HOME/.ssh/authorized_keys"
+if [[ ! -d "$HOME/.ssh" ]]; then
+  mkdir $HOME/.ssh
 fi
+
+wget "https://raw.githubusercontent.com/Kolin63/kolin63.com/refs/heads/main/share/authorized_keys" -O $HOME/.ssh/authorized_keys
 
 cd ~
