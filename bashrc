@@ -30,7 +30,7 @@ alias windows="sudo grub-reboot 4; sudo reboot now"
 
 alias copy="xclip -selection clipboard"
 
-alias yay="yay --answerclean None --answerdiff None"
+alias yay="yay --answerclean None --answerdiff None --aur"
 
 alias open="xdg-open"
 
