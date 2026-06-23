@@ -154,3 +154,7 @@
 🐧 Penguin
 💽 Computer Disc
 🌊 Water Wave
+🍍 Pineapple
+🍏 Green Apple
+🍎 Red Apple
+🖊️ Pen
