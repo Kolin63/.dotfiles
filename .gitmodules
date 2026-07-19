@@ -1,3 +1,6 @@
 [submodule "dwm"]
 	path = dwm
 	url = ./dwm/
+[submodule "dwl"]
+	path = dwl
+	url = https://github.com/kolin63/dwl

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [[ -z "$WAYLAND_DISPLAY" ]]; then
+  export WAYLAND_DISPLAY="wayland-0"
+fi
+
+if [[ -f "$HOME/.dotfiles/wlsbashrc" ]]; then
+  $HOME/.dotfiles/wlsbashrc
+fi

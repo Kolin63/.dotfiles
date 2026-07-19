@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 # fetch git repos
-autogitfetch &> /dev/null
+autogitfetch &> /dev/null &
