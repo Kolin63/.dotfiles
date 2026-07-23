@@ -2,7 +2,7 @@ return {
   {
     'vim-scripts/a.vim',
 
-    enabled = false,
+    enabled = true,
 
     config = function ()
       vim.keymap.del("i", "<leader>ih")
