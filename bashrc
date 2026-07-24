@@ -46,9 +46,6 @@ export PATH="$PATH:$HOME/.local/share/emsdk/upstream/emscripten"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
-export PRINTER="HL2270DW"
-export LPDEST="HL2270DW"
-
 export BC_ENV_ARGS="$HOME/.dotfiles/bc"
 
 export TZ="America/New_York"
