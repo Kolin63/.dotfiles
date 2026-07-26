@@ -10,7 +10,7 @@ print("markdown config loaded!")
 -- vim.opt.linebreak = true
 -- vim.opt.wrap = true
 
--- disable cmp because who needs that in markdown 
+-- disable cmp because who needs that in markdown
 require("cmp").setup.buffer { enabled = false }
 
 -- spellcheck

@@ -1,17 +1,18 @@
 return {
   "nvim-treesitter/nvim-treesitter",
-  build = ':TSUpdate',
+  lazy = false,
   main = "nvim-treesitter.configs",
+  build = ':TSUpdate',
+
+  enabled = true,
 
   config = function ()
 
     require('nvim-treesitter').setup {
       -- A list of parser names, or "all" (the listed parsers MUST always be installed)
-      ensure_installed = { "cpp", "json", "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline" },
+      ensure_installed = { "cpp", "json", "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline", "bash", "yaml" },
 
       indent = { enable = true },
-
-      highlight = { enable = true },
 
       -- Install parsers synchronously (only applied to `ensure_installed`)
       sync_install = false,
@@ -39,5 +40,11 @@ return {
         -- additional_vim_regex_highlighting = false,
       },
     }
+
+    vim.api.nvim_create_autocmd('FileType', {
+      pattern = { 'c', 'markdown' },
+      callback = function() vim.treesitter.start() end,
+    })
+
   end
 }
