@@ -1,3 +1,5 @@
+langs = { "json", "c", "lua", "vim", "vimdoc", "markdown", "markdown_inline", "bash", "yaml" }
+
 return {
   "nvim-treesitter/nvim-treesitter",
   lazy = false,
@@ -10,7 +12,7 @@ return {
 
     require('nvim-treesitter').setup {
       -- A list of parser names, or "all" (the listed parsers MUST always be installed)
-      ensure_installed = { "cpp", "json", "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline", "bash", "yaml" },
+      ensure_installed = langs,
 
       indent = { enable = true },
 
@@ -42,7 +44,7 @@ return {
     }
 
     vim.api.nvim_create_autocmd('FileType', {
-      pattern = { 'c', 'markdown' },
+      pattern = langs,
       callback = function() vim.treesitter.start() end,
     })
 

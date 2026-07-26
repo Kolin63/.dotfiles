@@ -11,6 +11,4 @@ vim.api.nvim_create_user_command("W",
   end, {}
 )
 
-vim.api.nvim_create_user_command("A", ":LspClangdSwitchSourceHeader", {})
-
 vim.keymap.set("n", "=", "<nop>")
