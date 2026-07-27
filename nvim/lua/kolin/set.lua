@@ -27,6 +27,13 @@ vim.opt.syntax = on
 vim.opt.termguicolors = true
 vim.opt.bg = dark
 
+-- Associate all .h files with C instead of CPP
+vim.filetype.add({
+  extension = {
+    h = "c",
+  },
+})
+
 -- Folding
 vim.opt.foldmethod = "indent"
 vim.cmd('autocmd BufEnter * set foldlevel=999')
