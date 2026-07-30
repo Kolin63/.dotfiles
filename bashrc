@@ -28,7 +28,7 @@ alias ts="tmux-sessionizer"
 
 alias windows="sudo grub-reboot 4; sudo reboot now"
 
-alias copy="xclip -selection clipboard"
+alias copy="wl-copy"
 
 alias yay="yay --answerclean None --answerdiff None"
 

@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-(exec $(compgen -c | sort | uniq | dmenu -fn "JetBrainsMono Nerd Font:size=10")) &> /dev/null
