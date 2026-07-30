@@ -34,7 +34,6 @@ function sym() {
 mkdir ~/.config &> /dev/null
 mkdir ~/.config/alacritty &> /dev/null
 mkdir ~/.config/gh &> /dev/null
-mkdir ~/.config/picom &> /dev/null
 
 sym ~/.dotfiles/nvim                    ~/.config/nvim
 sym ~/.dotfiles/dwm/dwm                 /usr/bin/dwm sudo
@@ -44,14 +43,8 @@ sym ~/.dotfiles/bashrc                  ~/.bashrc
 sym ~/.dotfiles/gh.yml                  ~/.config/gh/config.yml
 sym ~/.dotfiles/git.conf                ~/.gitconfig
 sym ~/.dotfiles/grub.conf               /etc/default/grub sudo
-sym ~/.dotfiles/picom.conf              ~/.config/picom/picom.conf
-sym ~/.dotfiles/qutebrowser.py          ~/.config/qutebrowser/config.py
-sym ~/.dotfiles/gruvbox_qutebrowser.py  ~/.config/qutebrowser/gruvbox.py
 sym ~/.dotfiles/tmux.conf               ~/.tmux.conf
 sym ~/.dotfiles/vimrc                   ~/.vimrc
 sym ~/.dotfiles/vimrc                   /root/.vimrc sudo
 sym ~/.dotfiles/xsession                ~/.xsession
-sym ~/.dotfiles/pigpen.txt              ~/.config/pigpen/config.txt
 sym ~/.dotfiles/ly-dm-lockscreen.ini    /etc/ly/config.ini sudo
-sym ~/.dotfiles/keyd.conf               /etc/keyd/default.conf sudo
-sym ~/.dotfiles/keydapp.conf            ~/.config/keyd/app.conf
