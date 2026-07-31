@@ -34,6 +34,7 @@ function sym() {
 mkdir ~/.config &> /dev/null
 mkdir ~/.config/gh &> /dev/null
 mkdir ~/.config/foot &> /dev/null
+mkdir ~/.config/mako &> /dev/null
 
 sym ~/.dotfiles/nvim                    ~/.config/nvim
 sym ~/.dotfiles/dwm/dwm                 /usr/bin/dwm sudo
@@ -49,3 +50,4 @@ sym ~/.dotfiles/xsession                ~/.xsession
 sym ~/.dotfiles/ly-dm-lockscreen.ini    /etc/ly/config.ini sudo
 sym ~/.dotfiles/ly-dm-lockscreen.ini    /etc/ly/config.ini sudo
 sym ~/.dotfiles/foot.ini                ~/.config/foot/foot.ini
+sym ~/.dotfiles/mako.conf               ~/.config/mako/config

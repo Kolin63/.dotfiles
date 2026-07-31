@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+# volctl up 5
+# volctl down 5
+# volctl togglemute
+
+if [[ "$1" == "up" ]]; then
+  amt="$2"
+  pamixer -i "$amt"
+  vol="$(pamixer --get-volume)"
+  text="$vol%"
+elif [[ "$1" == "down" ]]; then
+  amt="$2"
+  pamixer -d "$amt"
+  vol="$(pamixer --get-volume)"
+  text="$vol%"
+elif [[ "$1" == "togglemute" ]]; then
+  pamixer -t
+  mute="$(pamixer --get-mute)"
+  vol="$(pamixer --get-volume)"
+  if [[ "$mute" == "true" ]]; then
+    text="Muted ($vol%)"
+  else
+    text="$vol%"
+  fi
+fi
+
+
+echo "$text"
+
+notify-send -t 1000 -a 'volctl' -h string:x-canonical-private-synchronous:volume -h int:value:$vol "$text"

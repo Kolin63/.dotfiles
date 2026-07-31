@@ -11,10 +11,10 @@ if [ ! -e /tmp/.sbashrcWasRan ]; then
   fi
 fi
 
-nohup awww-daemon > /dev/null
+nohup awww-daemon &
 awww img -t none $HOME/.dotfiles/dwl/wallpaper.jpg
 
-nohup mako > /dev/null
+nohup mako &
 
 if [[ -z "$WAYLAND_DISPLAY" ]]; then
   export WAYLAND_DISPLAY="wayland-0"
