@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+raw=$(upower -b)
+perc=$(echo "$raw" | grep "perc")
+tm=$(echo "$raw" | grep "time")
+
+echo "$perc"
+echo "$tm"
