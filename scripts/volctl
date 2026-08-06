@@ -6,11 +6,13 @@
 
 if [[ "$1" == "up" ]]; then
   amt="$2"
+  pamixer -u
   pamixer -i "$amt"
   vol="$(pamixer --get-volume)"
   text="$vol%"
 elif [[ "$1" == "down" ]]; then
   amt="$2"
+  pamixer -u
   pamixer -d "$amt"
   vol="$(pamixer --get-volume)"
   text="$vol%"
