@@ -27,7 +27,16 @@ elif [[ "$1" == "togglemute" ]]; then
   fi
 fi
 
+if [[ "$mute" == "true" ]]; then
+  icon=""
+elif [[ $vol -eq 0 ]]; then
+  icon=""
+elif [[ $vol -le 50 ]]; then
+  icon=""
+else
+  icon=""
+fi
 
 echo "$text"
 
-notify-send -t 1000 -a 'mononotif' -h string:x-canonical-private-synchronous:mononotif -h int:value:$vol "$text"
+notify-send -t 1000 -a 'mononotif' -h string:x-canonical-private-synchronous:mononotif -h int:value:$vol "$icon  $text"
