@@ -8,4 +8,4 @@ msg="$(echo -e "$perc\n$tm")"
 
 echo "$msg"
 
-notify-send -t 5000 -a 'power' -h string:x-canonical-private-synchronous:power -h int:value:$perc "$msg"
+notify-send -t 5000 -a 'mononotif' -h string:x-canonical-private-synchronous:mononotif -h int:value:$perc "$msg"

@@ -30,4 +30,4 @@ fi
 
 echo "$text"
 
-notify-send -t 1000 -a 'volctl' -h string:x-canonical-private-synchronous:volume -h int:value:$vol "$text"
+notify-send -t 1000 -a 'mononotif' -h string:x-canonical-private-synchronous:mononotif -h int:value:$vol "$text"
