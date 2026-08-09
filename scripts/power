@@ -2,10 +2,19 @@
 
 raw=$(upower -b)
 perc=$(echo "$raw" | grep "perc" | awk '{print $2}')
-tm=$(echo "$raw" | grep "time" | awk '{printf $4; printf " "; print $5}')
+tm=$(echo $(echo "$raw" | grep "time"))
 
-msg="$(echo -e "$perc\n$tm")"
+# charging/discharging
+state=$(echo "$raw" | grep "state" | awk '{print $2}')
+rate=$(echo "$raw" | grep "energy-rate" | awk '{print $2}')
 
+if [[ "$state" == "charging" ]]; then
+  rate="+$rate W"
+else
+  rate="-$rate W"
+fi
+
+msg="$(echo -e "$perc\n$tm\n$rate")"
 echo "$msg"
 
 notify-send -t 5000 -a 'mononotif' -h string:x-canonical-private-synchronous:mononotif -h int:value:$perc "$msg"
