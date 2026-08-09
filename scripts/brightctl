@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# brightctl 10%+
+# brightctl 10%-
+
+brightnessctl set "$1"
+
+perc=$(( "$(brightnessctl get)" * 100 / "$(brightnessctl max)" ))
+if [[ $(( $perc % 10 )) -ne 0 ]]; then
+  perc=$(( $perc / 10 * 10 + 10 ))
+fi
+
+echo $perc
+
+notify-send -t 1000 -a 'mononotif' -h string:x-canonical-private-synchronous:mononotif -h int:value:$perc "☀ $perc%"
