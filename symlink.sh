@@ -49,3 +49,4 @@ sym ~/.dotfiles/ly-dm-lockscreen.ini    /etc/ly/config.ini sudo
 sym ~/.dotfiles/ly-dm-lockscreen.ini    /etc/ly/config.ini sudo
 sym ~/.dotfiles/foot.ini                ~/.config/foot/foot.ini
 sym ~/.dotfiles/mako.conf               ~/.config/mako/config
+sym ~/.dotfiles/keyd.conf               /etc/keyd/default.conf sudo
