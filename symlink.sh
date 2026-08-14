@@ -37,7 +37,6 @@ mkdir ~/.config/foot &> /dev/null
 mkdir ~/.config/mako &> /dev/null
 
 sym ~/.dotfiles/nvim                    ~/.config/nvim
-sym ~/.dotfiles/dwm/dwm                 /usr/bin/dwm sudo
 sym ~/.dotfiles/dwl/dwl                 /usr/bin/dwl sudo
 sym ~/.dotfiles/bashrc                  ~/.bashrc
 sym ~/.dotfiles/gh.yml                  ~/.config/gh/config.yml
@@ -46,7 +45,6 @@ sym ~/.dotfiles/grub.conf               /etc/default/grub sudo
 sym ~/.dotfiles/tmux.conf               ~/.tmux.conf
 sym ~/.dotfiles/vimrc                   ~/.vimrc
 sym ~/.dotfiles/vimrc                   /root/.vimrc sudo
-sym ~/.dotfiles/xsession                ~/.xsession
 sym ~/.dotfiles/ly-dm-lockscreen.ini    /etc/ly/config.ini sudo
 sym ~/.dotfiles/ly-dm-lockscreen.ini    /etc/ly/config.ini sudo
 sym ~/.dotfiles/foot.ini                ~/.config/foot/foot.ini
