@@ -16,6 +16,7 @@ fi
 
 export EDITOR="nvim"
 export MANPAGER="less"
+export MANWIDTH=80
 which vi &> /dev/null && export EDITOR="vi"
 which vim &> /dev/null && export EDITOR="vim"
 which nvim &> /dev/null && export EDITOR="nvim" && export MANPAGER="nvim +Man!"
