@@ -9,12 +9,6 @@ end)
 vim.keymap.set("n", "<Tab>", vim.cmd.tabn)
 vim.keymap.set("n", "<S-Tab>", vim.cmd.tabp)
 
--- Scrolling Remap
-vim.keymap.set("n", "<M-k>", "2<C-y>2k")
-vim.keymap.set("n", "<M-j>", "2<C-e>2j")
-vim.keymap.set("n", "<C-y>", "2<C-y>")
-vim.keymap.set("n", "<C-e>", "2<C-e>")
-
 -- Page Up and Down
 vim.keymap.set("n", "<PageUp>", "<C-u>")
 vim.keymap.set("n", "<PageDown>", "<C-d>")
