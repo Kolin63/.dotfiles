@@ -56,7 +56,7 @@ vim.keymap.set("n", "<C-f>", "l")
 vim.keymap.set("i", "<C-b>", "<Esc>i")
 vim.keymap.set("n", "<C-b>", "h")
 
--- Ctrl Shift G Opens GitHub Repo in Web
+-- Ctrl Shifthello G Opens GitHub Repo in Web
 vim.keymap.set("n", "<C-G>", function() vim.cmd("silent exec \"!gh repo view --web\"") end)
 
 -- Auto Braces and Parentheses and stuff
@@ -89,3 +89,6 @@ vim.keymap.set("n", "<leader>ch", function() vim.cmd("!chubby") end)
 --     vim.cmd("silent exec \"!chubby &> /dev/null &\"")
 --   end
 -- })
+
+-- leader gd for go to function definition, assuming break after return type
+vim.keymap.set("n", "<leader>gd", "/^<C-r><C-w><CR>")
