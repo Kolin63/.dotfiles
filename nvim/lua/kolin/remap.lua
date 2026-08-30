@@ -91,4 +91,4 @@ vim.keymap.set("n", "<leader>ch", function() vim.cmd("!chubby") end)
 -- })
 
 -- leader gd for go to function definition, assuming break after return type
-vim.keymap.set("n", "<leader>gd", "/^<C-r><C-w><CR>")
+vim.keymap.set("n", "<leader>gd", "/^<C-r><C-w><CR>kj")
