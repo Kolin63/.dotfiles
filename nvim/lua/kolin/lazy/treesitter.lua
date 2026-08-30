@@ -1,4 +1,4 @@
-langs = { "json", "c", "lua", "vim", "vimdoc", "markdown", "markdown_inline", "bash", "yaml", "java" }
+langs = { "json", "c", "cpp", "lua", "vim", "vimdoc", "markdown", "markdown_inline", "bash", "yaml", "java" }
 
 return {
   "nvim-treesitter/nvim-treesitter",
