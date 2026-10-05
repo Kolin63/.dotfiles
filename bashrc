@@ -46,6 +46,8 @@ export PATH="$PATH:$HOME/.local/share/emsdk"
 export PATH="$PATH:$HOME/.local/share/emsdk/upstream/emscripten"
 
 export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_PICTURES_DIR="$HOME/Pictures"
+export GRIM_DEFAULT_DIR="$HOME/Pictures/Screenshots"
 
 export BC_ENV_ARGS="$HOME/.dotfiles/bc"
 
