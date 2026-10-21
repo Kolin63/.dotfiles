@@ -37,6 +37,8 @@ mkdir ~/.config/foot &> /dev/null
 mkdir ~/.config/mako &> /dev/null
 
 sym ~/.dotfiles/nvim                    ~/.config/nvim
+sym ~/.dotfiles/emacs                   ~/.config/emacs
+sym ~/.dotfiles/emacs.el                ~/.emacs.el
 sym ~/.dotfiles/dwl/dwl                 /usr/bin/dwl sudo
 sym ~/.dotfiles/bashrc                  ~/.bashrc
 sym ~/.dotfiles/gh.yml                  ~/.config/gh/config.yml
