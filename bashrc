@@ -93,7 +93,7 @@ clear() {
 printf "...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 bash "$HOME/.dotfiles/scripts/bashwelcome.sh"
 
-[ -e "$HOME/.local/bin/oh-my-posh" ] && eval "$(oh-my-posh init bash --config '$HOME/.dotfiles/colin.omp.json')" &> /dev/null
+eval "$(oh-my-posh init bash --strict --config "$HOME/.dotfiles/colin.omp.json")" &> /dev/null
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
