@@ -67,16 +67,16 @@ export EMSDK_NODE=$HOME/.local/share/emsdk/node/22.16.0_64bit/bin/node
 export IGNOREEOF=32767
 
 if [ -e $HOME/.dotfiles/lbashrc ]; then
-  source $HOME/dotfiles/lbashrc
+  source $HOME/.dotfiles/lbashrc
 fi
 
 if [ ! -e /tmp/.sbashrcWasRan ]; then
   touch /tmp/.sbashrcWasRan
-  if [ -e $HOME/dotfiles/lsbashrc ]; then
-    source $HOME/dotfiles/lsbashrc # for local startup
+  if [ -e $HOME/.dotfiles/lsbashrc ]; then
+    source $HOME/.dotfiles/lsbashrc # for local startup
   fi
-  if [ -e $HOME/dotfiles/sbashrc ]; then
-    source $HOME/dotfiles/sbashrc # startup for all machines
+  if [ -e $HOME/.dotfiles/sbashrc ]; then
+    source $HOME/.dotfiles/sbashrc # startup for all machines
   fi
 fi
 
