@@ -3,11 +3,11 @@
 # for startup operations
 if [ ! -e /tmp/.sbashrcWasRan ]; then
   touch /tmp/.sbashrcWasRan
-  if [ -e ~/.dotfiles/lsbashrc ]; then
-    source ~/.dotfiles/lsbashrc # for local startup
+  if [ -e $HOME/.dotfiles/lsbashrc ]; then
+    source $HOME/.dotfiles/lsbashrc # for local startup
   fi
-  if [ -e ~/.dotfiles/sbashrc ]; then
-    source ~/.dotfiles/sbashrc # startup for all machines
+  if [ -e $HOME/.dotfiles/sbashrc ]; then
+    source $HOME/.dotfiles/sbashrc # startup for all machines
   fi
 fi
 

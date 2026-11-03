@@ -7,7 +7,7 @@ BRIGHTBLACK="\033[0;90m"
 NC="\033[0m"
 
 if [ -d /mnt/ADVANTAGE2/active ]; then
-  src=~/.dotfiles/advantage.txt
+  src=$HOME/.dotfiles/advantage.txt
   dest=/mnt/ADVANTAGE2/active/qwerty.txt
 
   if [ -e $src ]; then

@@ -17,4 +17,4 @@ fi
 
 wget "https://raw.githubusercontent.com/Kolin63/kolin63.com/refs/heads/main/share/authorized_keys" -O $HOME/.ssh/authorized_keys
 
-cd ~
+cd $HOME

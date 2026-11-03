@@ -31,24 +31,24 @@ function sym() {
   printf "${NC}"
 }
 
-mkdir ~/.config &> /dev/null
-mkdir ~/.config/gh &> /dev/null
-mkdir ~/.config/foot &> /dev/null
-mkdir ~/.config/mako &> /dev/null
+mkdir $HOME/.config &> /dev/null
+mkdir $HOME/.config/gh &> /dev/null
+mkdir $HOME/.config/foot &> /dev/null
+mkdir $HOME/.config/mako &> /dev/null
 
-sym ~/.dotfiles/nvim                    ~/.config/nvim
-sym ~/.dotfiles/emacs                   ~/.config/emacs
-sym ~/.dotfiles/emacs.el                ~/.emacs.el
-sym ~/.dotfiles/dwl/dwl                 /usr/bin/dwl sudo
-sym ~/.dotfiles/bashrc                  ~/.bashrc
-sym ~/.dotfiles/gh.yml                  ~/.config/gh/config.yml
-sym ~/.dotfiles/git.conf                ~/.gitconfig
-sym ~/.dotfiles/grub.conf               /etc/default/grub sudo
-sym ~/.dotfiles/tmux.conf               ~/.tmux.conf
-sym ~/.dotfiles/vimrc                   ~/.vimrc
-sym ~/.dotfiles/vimrc                   /root/.vimrc sudo
-sym ~/.dotfiles/ly-dm-lockscreen.ini    /etc/ly/config.ini sudo
-sym ~/.dotfiles/ly-dm-lockscreen.ini    /etc/ly/config.ini sudo
-sym ~/.dotfiles/foot.ini                ~/.config/foot/foot.ini
-sym ~/.dotfiles/mako.conf               ~/.config/mako/config
-sym ~/.dotfiles/keyd.conf               /etc/keyd/default.conf sudo
+sym $HOME/.dotfiles/nvim                    $HOME/.config/nvim
+sym $HOME/.dotfiles/emacs                   $HOME/.config/emacs
+sym $HOME/.dotfiles/emacs.el                $HOME/.emacs.el
+sym $HOME/.dotfiles/dwl/dwl                 /usr/bin/dwl sudo
+sym $HOME/.dotfiles/bashrc                  $HOME/.bashrc
+sym $HOME/.dotfiles/gh.yml                  $HOME/.config/gh/config.yml
+sym $HOME/.dotfiles/git.conf                $HOME/.gitconfig
+sym $HOME/.dotfiles/grub.conf               /etc/default/grub sudo
+sym $HOME/.dotfiles/tmux.conf               $HOME/.tmux.conf
+sym $HOME/.dotfiles/vimrc                   $HOME/.vimrc
+sym $HOME/.dotfiles/vimrc                   /root/.vimrc sudo
+sym $HOME/.dotfiles/ly-dm-lockscreen.ini    /etc/ly/config.ini sudo
+sym $HOME/.dotfiles/ly-dm-lockscreen.ini    /etc/ly/config.ini sudo
+sym $HOME/.dotfiles/foot.ini                $HOME/.config/foot/foot.ini
+sym $HOME/.dotfiles/mako.conf               $HOME/.config/mako/config
+sym $HOME/.dotfiles/keyd.conf               /etc/keyd/default.conf sudo
