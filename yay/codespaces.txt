@@ -19,6 +19,7 @@ make
 man-db
 man-pages
 moreutils
+neovim
 npm
 oh-my-posh
 pdftk
