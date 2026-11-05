@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
 
-touch /tmp/nonerdfont
-exec bash
+if [[ ! -e /tmp/nonerdfont ]]; then
+  touch /tmp/nonerdfont
+  exec bash
+fi
