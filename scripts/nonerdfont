@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 if [[ ! -e /tmp/nonerdfont ]]; then
   touch /tmp/nonerdfont
