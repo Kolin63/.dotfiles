@@ -48,7 +48,6 @@ sym $HOME/.dotfiles/tmux.conf               $HOME/.tmux.conf
 sym $HOME/.dotfiles/vimrc                   $HOME/.vimrc
 sym $HOME/.dotfiles/vimrc                   /root/.vimrc sudo
 sym $HOME/.dotfiles/ly-dm-lockscreen.ini    /etc/ly/config.ini sudo
-sym $HOME/.dotfiles/ly-dm-lockscreen.ini    /etc/ly/config.ini sudo
 sym $HOME/.dotfiles/foot.ini                $HOME/.config/foot/foot.ini
 sym $HOME/.dotfiles/mako.conf               $HOME/.config/mako/config
 sym $HOME/.dotfiles/keyd.conf               /etc/keyd/default.conf sudo
