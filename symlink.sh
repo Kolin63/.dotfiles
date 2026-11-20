@@ -51,3 +51,6 @@ sym $HOME/.dotfiles/ly-dm-lockscreen.ini    /etc/ly/config.ini sudo
 sym $HOME/.dotfiles/foot.ini                $HOME/.config/foot/foot.ini
 sym $HOME/.dotfiles/mako.conf               $HOME/.config/mako/config
 sym $HOME/.dotfiles/keyd.conf               /etc/keyd/default.conf sudo
+
+# does not allow symlink:
+sudo cp $HOME/.dotfiles/systemd-boot.conf /boot/loader/loader.conf
