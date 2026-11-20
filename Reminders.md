@@ -186,11 +186,23 @@ contents (copied verbatim from my Fedora systemd system):
 #  the Free Software Foundation; either version 2 of the License, or
 #  (at your option) any later version.
 
-[Unit] Description=/etc/rc.local Compatibility ConditionPathExists=/etc/rc.local
+[Unit]
+Description=/etc/rc.local Compatibility
+ConditionPathExists=/etc/rc.local
 
-[Service] Type=forking ExecStart=/etc/rc.local start TimeoutSec=0
-StandardOutput=tty RemainAfterExit=yes SysVStartPriority=99
+[Service]
+Type=forking
+ExecStart=/etc/rc.local start
+TimeoutSec=0
+StandardOutput=tty
+RemainAfterExit=yes
+SysVStartPriority=99
+
+[Install]
+WantedBy=sysinit.target
 ```
+
+Don't forget to make rc.local executable
 
 Then, just run `systemctl enable rc-local.service` as root to enable it. You can
 also test it/run it now by running `systemctl start rc-local.service`.
