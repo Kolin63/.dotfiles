@@ -7,8 +7,8 @@ output device. See [this StackOverflow
 answer](https://askubuntu.com/questions/14077/) for more information.
 
 ## Mounting Drives
-To find the name of the drive, use `lsblk`. The name will be something like
-sdb or sdb1 or sdc. Run `sudo mount /dev/sdb /mnt/directory -m` to mount it to a
+To find the name of the drive, use `lsblk`. The name will be something like sdb
+or sdb1 or sdc. Run `sudo mount /dev/sdb /mnt/directory -m` to mount it to a
 directory. The -m means make a new directory if it doesn't already exist.
 
 To unmount, use `sudo umount /mnt/directory`
@@ -168,3 +168,29 @@ sudo hwclock --systohc
 # Verify:
 timedatectl
 ```
+
+## RC Local, rc-local
+[forum](https://superuser.com/questions/278396/systemd-does-not-run-etc-rc-local
+).
+
+Arch might not have included the service unit file necessary to run rc.local.
+
+Just create a file `/etc/systemd/system/rc-local.service` with the following
+contents (copied verbatim from my Fedora systemd system):
+
+```
+#  This file is part of systemd.
+#
+#  systemd is free software; you can redistribute it and/or modify it
+#  under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+
+[Unit] Description=/etc/rc.local Compatibility ConditionPathExists=/etc/rc.local
+
+[Service] Type=forking ExecStart=/etc/rc.local start TimeoutSec=0
+StandardOutput=tty RemainAfterExit=yes SysVStartPriority=99
+```
+
+Then, just run `systemctl enable rc-local.service` as root to enable it. You can
+also test it/run it now by running `systemctl start rc-local.service`.
