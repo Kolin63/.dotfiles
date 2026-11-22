@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+if [[ $# -le 0 ]] || [[ $# -gt 2 ]] || [[ -z "$1" ]] || [[ $# -eq 2 && -z "$2" ]]; then
+  echo "Usage: $0 <file in> [file out]"
+  echo "Converts video file to DNxHR format .mov, which can be imported into"
+  echo "Davinci Resolve"
+fi
+
+in="$1"
+
+if [[ $# -eq 2 ]]; then
+  out="$2"
+else
+  out="$in.mov"
+fi
+
+ffmpeg -i "$in" \
+  -c:v dnxhd -profile:v dnxhr_sq \
+  -pix_fmt yuv422p \
+  -c:a pcm_s16le \
+  "$out"
