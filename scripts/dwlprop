@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+read -r PID
+read -r TITLE
+read -r APPID
+read -r TAGS
+read -r GEOMETRY
+
+if [[ -z "$GEOMETRY" ]]; then
+  exit 1
+fi
+
+msg="$(printf "PID: %s, Title: %s, App ID: %s, Tags: %s, Geometry: %s, " $PID $TITLE $APPID $TAGS $GEOMETRY)"
+
+echo "$msg"
+echo "$msg" >> /tmp/dwlprop.txt
+
+notify-send -t 10000 "DWL Prop (/tmp/dwlprop.txt)" "$msg"
